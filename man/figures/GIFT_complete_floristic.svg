@@ -1,0 +1,1361 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1 (c68e22c387, 2021-05-23)"
+   sodipodi:docname="GIFT_complete_floristic.svg"
+   inkscape:export-filename="C:\Users\Pierre\ownCloud\GIFT\figures\GIFT_complete_taxon.png"
+   inkscape:export-xdpi="250"
+   inkscape:export-ydpi="250"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#ffffff"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="1"
+     inkscape:pagecheckerboard="false"
+     inkscape:document-units="mm"
+     showgrid="false"
+     inkscape:zoom="0.696647"
+     inkscape:cx="403.36067"
+     inkscape:cy="529.68002"
+     inkscape:window-width="2560"
+     inkscape:window-height="1334"
+     inkscape:window-x="1909"
+     inkscape:window-y="-11"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2">
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path49785" />
+    </marker>
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159" />
+    <rect
+       x="477.05679"
+       y="78.156113"
+       width="266.94879"
+       height="101.50144"
+       id="rect17452" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="251.20325"
+       height="51.676098"
+       id="rect3624" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="251.20325"
+       height="51.676098"
+       id="rect3624-7" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="274.17041"
+       height="51.676098"
+       id="rect3624-5" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="320.10471"
+       height="51.676098"
+       id="rect3624-7-5" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="829.64197"
+       height="104.45685"
+       id="rect3624-7-5-7" />
+    <rect
+       x="477.05679"
+       y="78.156113"
+       width="266.94879"
+       height="101.50144"
+       id="rect17452-7" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="765.69604"
+       height="70.961372"
+       id="rect3624-7-5-7-6" />
+    <rect
+       x="477.05679"
+       y="78.156113"
+       width="266.94879"
+       height="101.50144"
+       id="rect17452-7-8" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="251.20325"
+       height="51.676098"
+       id="rect3624-71" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="251.20325"
+       height="51.676098"
+       id="rect3624-7-4" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="296.87891"
+       height="51.676098"
+       id="rect3624-7-2" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="251.20325"
+       height="51.676098"
+       id="rect3624-7-4-9" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="251.20325"
+       height="51.676098"
+       id="rect3624-7-6" />
+    <rect
+       x="477.05679"
+       y="78.156113"
+       width="266.94879"
+       height="101.50144"
+       id="rect17452-77" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="443.04099"
+       height="145.05743"
+       id="rect3624-7-4-4" />
+    <rect
+       x="477.05679"
+       y="78.156113"
+       width="266.94879"
+       height="101.50144"
+       id="rect17452-77-5" />
+    <rect
+       x="41.627968"
+       y="90.433174"
+       width="809.34167"
+       height="98.36676"
+       id="rect3624-7-5-7-5" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-3" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-8" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-5" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-8-5" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-5-7" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-3-6" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-58" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-3-6-4" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-58-1" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-5-7-1" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-8-5-9" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-3-6-0" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-58-7" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-5-7-9" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-8-5-6" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-3-6-6" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-58-9" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="295.70212"
+       height="84.691383"
+       id="rect8159-5-5-7-5" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="589.99146"
+       height="76.931938"
+       id="rect8159-5-8-5-67" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-1" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-4"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path49785-8" />
+    </marker>
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-9" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-6" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-8" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-6" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-17" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6-9" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6-9-7" />
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-5"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path49785-1" />
+    </marker>
+    <marker
+       style="overflow:visible"
+       id="Arrow1Lend-5-2"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow1Lend"
+       inkscape:isstock="true">
+      <path
+         transform="matrix(-0.8,0,0,-0.8,-10,0)"
+         style="fill:context-stroke;fill-rule:evenodd;stroke:context-stroke;stroke-width:1pt"
+         d="M 0,0 5,-5 -12.5,0 5,5 Z"
+         id="path49785-1-1" />
+    </marker>
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-99" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-17-2" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-0" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-6-8" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-8-5" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6-4" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6-9-9" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6-9-7-0" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-4" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-17-0" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-3" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-6-1" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-8-4" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6-3" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6-9-6" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6-9-7-00" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-4" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-6-9" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="574.54814"
+       height="88.741337"
+       id="rect8159-5-8-5-67-6-2" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="711.69547"
+       height="81.832863"
+       id="rect8159-5-8-5-67-6" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-8-9-6" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-6-3-1" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-17-1-6" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-8-9" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-6-3" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-17-1" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6-9-7-5" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6-9-2" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="455.05939"
+       height="41.045761"
+       id="rect8159-5-8-5-67-3-1-6-32" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="699.08545"
+       height="55.400238"
+       id="rect8159-5-8-5-67-39-2" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="705.59173"
+       height="71.311794"
+       id="rect8159-5-8-5-67-39" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-8-7" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-6-33" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-7" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-17-5" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-0" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-0-0" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-0-0-6" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-0-0-2" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-17-1-6-1" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-6-3-1-5" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-8-9-6-8" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="625.50648"
+       height="84.435033"
+       id="rect8159-5-8-5-67-6-2-1" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-7-60-6-9-9" />
+    <rect
+       x="-70.336914"
+       y="4.3063416"
+       width="163.15105"
+       height="79.859261"
+       id="rect8159-8-6-33-9" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1">
+    <rect
+       style="fill:#f0f0f0;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       id="rect54875"
+       width="209.05974"
+       height="72.368683"
+       x="0.51843399"
+       y="0.25026512" />
+    <path
+       style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.464;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 73.396154,34.262933 2.116846,-11.84995 42.25171,0.19901 4.39017,11.65094 -11.80158,9.716435 -28.235975,1.305136 z"
+       id="path1017-6-5-3"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.529432;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 129.17531,41.590371 3.40945,-24.12578 31.78012,-2.44056 15.84074,5.074 9.43753,8.35187 15.18691,9.40166 1.59533,8.86605 -19.29174,5.55236 -46.7306,0.41005 z"
+       id="path1017-6-5-3-0"
+       sodipodi:nodetypes="cccccccccc" />
+    <path
+       style="fill:#b4b4b4;fill-opacity:1;stroke:#000000;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1.5739582,44.622248 5.5228599,-29.52735 38.9600739,-2.45176 22.93491,4.570333 -0.736026,21.205002 -29.708455,16.623068 z"
+       id="path1017-6-5-3-0-2"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:0.464;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 73.149399,130.12746 2.116846,-11.84995 42.251705,0.19901 4.39017,11.65094 -11.80158,9.71643 -28.235973,1.30514 z"
+       id="path1017-6-5-3-8"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1.2862081,140.49318 5.5228599,-29.52735 38.960075,-2.45176 22.93491,4.57033 -0.736026,21.205 -29.708455,16.62307 z"
+       id="path1017-6-5-3-0-2-6"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:0.464;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 73.149399,202.09513 2.11684,-11.84995 42.251721,0.19901 4.39017,11.65094 -11.80158,9.71643 -28.235991,1.30514 z"
+       id="path1017-6-5-3-8-6"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1.2862081,212.46085 5.5228597,-29.52735 38.9600762,-2.45176 22.93491,4.57033 -0.736026,21.205 -29.708455,16.62307 z"
+       id="path1017-6-5-3-0-2-6-1"
+       sodipodi:nodetypes="ccccccc" />
+    <path
+       style="fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:0.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 1.2862081,283.14305 5.5228594,-29.52735 38.9600765,-2.45176 22.934909,4.57033 -0.736025,21.205 -29.708455,16.62307 z"
+       id="path1017-6-5-3-0-2-6-1-1"
+       sodipodi:nodetypes="ccccccc" />
+    <g
+       id="g3219"
+       transform="translate(-62.692751,-1.9789311)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.01025"
+         id="rect1630"
+         width="59.305737"
+         height="9.684783"
+         x="70.262154"
+         y="21.838236" />
+      <g
+         id="g28922-5"
+         transform="matrix(1.099603,0,0,1.099603,-68.550866,-101.26672)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.07549,111.26823)"
+           id="text8157-0-27"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-0);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46350"><tspan
+               style="font-style:italic"
+               id="tspan46348">Naturalized plants</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3226"
+       transform="translate(-69.276742,30.069813)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.874476"
+         id="rect1630-2-4"
+         width="44.436066"
+         height="9.684783"
+         x="76.433823"
+         y="5.222187" />
+      <g
+         id="g28922-2-9"
+         transform="matrix(1.099603,0,0,1.099603,-62.148815,-117.86478)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.59912,111.15554)"
+           id="text8157-0-1-5"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-17-5);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46354"><tspan
+               style="font-style:italic"
+               id="tspan46352">Native plants</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3233"
+       transform="translate(-80.313187,20.178272)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.771091"
+         id="rect1630-2"
+         width="34.550205"
+         height="9.684783"
+         x="159.89388"
+         y="8.8302441" />
+      <g
+         id="g28922-9-0-11"
+         transform="matrix(1.099603,0,0,1.099603,28.167248,-111.916)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,144.55674,109.66294)"
+           id="text8157-0-6-9-6"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-7-60-7);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46358"><tspan
+               style="font-style:italic"
+               id="tspan46356">Endemics</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3240"
+       transform="translate(-90.966346,9.6777953)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.0274"
+         id="rect1630-2-2-6"
+         width="61.33696"
+         height="9.684783"
+         x="229.11157"
+         y="27.060423" />
+      <g
+         id="g28922-1-9"
+         transform="matrix(1.099603,0,0,1.099603,91.169743,-96.026542)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.11928,111.25187)"
+           id="text8157-0-2-50"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-6-33);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46362"><tspan
+               style="font-style:italic;-inkscape-font-specification:'sans-serif Italic'"
+               id="tspan46360">All vascular plants</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3247"
+       transform="translate(-90.396659,12.658855)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.768088"
+         id="rect1630-2-2"
+         width="34.281647"
+         height="9.684783"
+         x="228.54189"
+         y="7.5009584" />
+      <g
+         id="g28922-9-0-1-1"
+         transform="matrix(1.099603,0,0,1.099603,90.700102,-114.99248)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.11798,111.25187)"
+           id="text8157-0-6-9-1-9"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-7-60-8-7);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46366"><tspan
+               style="font-style:italic"
+               id="tspan46364">Endemics</tspan></tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,22.713919,0.27896815)"
+       id="text8157-2-77-1-3-6"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-5-8-5-67-39);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-70.335938"
+         y="33.501211"
+         id="tspan46376"><tspan
+           style="font-weight:bold"
+           id="tspan46368">Available </tspan><tspan
+           style="font-weight:bold"
+           id="tspan46370">checklists </tspan><tspan
+           style="font-weight:bold"
+           id="tspan46372">in three </tspan><tspan
+           style="font-weight:bold"
+           id="tspan46374">regions</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,22.387324,71.810879)"
+       id="text8157-2-77-1-3-6-0"
+       style="font-style:normal;font-weight:normal;font-size:37.3333px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-5-8-5-67-39-2);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-70.335938"
+         y="38.366943"
+         id="tspan46388"><tspan
+           style="font-weight:bold;font-size:32px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan46378">Output of</tspan><tspan
+           style="font-weight:bold;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold'"
+           id="tspan46380"> </tspan><tspan
+           style="font-weight:bold;font-family:'Courier New';-inkscape-font-specification:'Courier New Bold'"
+           id="tspan46382">GIFT_checklist() </tspan><tspan
+           style="font-weight:bold;font-size:32px;-inkscape-font-specification:'sans-serif Bold'"
+           id="tspan46384">if</tspan><tspan
+           style="font-weight:bold"
+           id="tspan46386"> </tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.20286227,0,0,0.20286227,33.46517,59.748258)"
+       id="text8157-2-77-1-3-0-4-6-8"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-5-8-5-67-3-1-6-32);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-70.335938"
+         y="33.501211"
+         id="tspan46390">Region A</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.20286227,0,0,0.20286227,94.630759,59.748258)"
+       id="text8157-2-77-1-3-0-4-6-1-42"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-5-8-5-67-3-1-6-9-2);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-70.335938"
+         y="33.501211"
+         id="tspan46392">Region B</tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.20286227,0,0,0.20286227,167.43421,59.775208)"
+       id="text8157-2-77-1-3-0-4-6-1-4-1"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-5-8-5-67-3-1-6-9-7-5);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-70.335938"
+         y="33.501211"
+         id="tspan46394">Region C</tspan></text>
+    <path
+       style="fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:0.529432;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 129.18637,280.1015 3.40945,-24.12581 31.78012,-2.44056 15.84073,5.074 9.43753,8.3519 15.18691,9.40166 1.59533,8.86605 -19.29174,5.55236 -46.7306,0.41005 z"
+       id="path1017-6-5-3-0-71"
+       sodipodi:nodetypes="cccccccccc" />
+    <g
+       id="g3226-1"
+       transform="translate(-69.276742,267.70691)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.874476"
+         id="rect1630-2-4-3"
+         width="44.436066"
+         height="9.684783"
+         x="76.433823"
+         y="5.222187" />
+      <g
+         id="g28922-2-1"
+         transform="matrix(1.099603,0,0,1.099603,-62.148815,-117.86478)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.59912,111.15554)"
+           id="text8157-0-1-3-2"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-17-1);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46398"><tspan
+               style="font-style:italic"
+               id="tspan46396">Native plants</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3240-2"
+       transform="translate(-90.966346,247.31488)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.944538"
+         id="rect1630-2-2-6-0"
+         width="51.842075"
+         height="9.684783"
+         x="229.11157"
+         y="27.060423" />
+      <g
+         id="g28922-1-1"
+         transform="matrix(1.099603,0,0,1.099603,91.169743,-96.026542)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.95106,111.25187)"
+           id="text8157-0-2-9-0"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;shape-inside:url(#rect8159-8-6-3)"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46402"><tspan
+               style="font-style:italic;font-weight:bold"
+               id="tspan46400">Native plants</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3247-5"
+       transform="translate(-90.396659,250.29594)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.765958"
+         id="rect1630-2-2-5"
+         width="34.091751"
+         height="9.684783"
+         x="228.54189"
+         y="7.5009584" />
+      <g
+         id="g28922-9-0-1-5"
+         transform="matrix(1.099603,0,0,1.099603,90.700102,-114.99248)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.11928,111.25187)"
+           id="text8157-0-6-9-1-7"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;shape-inside:url(#rect8159-8-7-60-8-9)"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46406"><tspan
+               style="font-style:italic"
+               id="tspan46404">Endemics</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g41536"
+       transform="translate(-49.07224,150.56061)">
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 138.64534,124.64782 149.42947,113.8637"
+         id="path49780-9-2-5-4"
+         sodipodi:nodetypes="cc" />
+      <path
+         style="fill:none;stroke:#000000;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 149.42947,124.64782 138.64534,113.8637"
+         id="path49780-9-2-5-4-1"
+         sodipodi:nodetypes="cc" />
+    </g>
+    <path
+       style="fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:0.529432;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 129.18636,137.45161 3.40944,-24.12576 31.78013,-2.44057 15.84073,5.074 9.43755,8.35186 15.18691,9.40166 1.59533,8.86605 -19.29174,5.55236 -46.73062,0.41005 z"
+       id="path1017-6-5-3-0-71-4"
+       sodipodi:nodetypes="cccccccccc" />
+    <g
+       id="g3219-9"
+       transform="translate(-62.692751,93.166813)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.01025"
+         id="rect1630-9"
+         width="59.305737"
+         height="9.684783"
+         x="70.262154"
+         y="21.838236" />
+      <g
+         id="g28922-5-1"
+         transform="matrix(1.099603,0,0,1.099603,-68.550866,-101.26672)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.07549,111.26823)"
+           id="text8157-0-27-6"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-0-0);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46410"><tspan
+               style="font-style:italic"
+               id="tspan46408">Naturalized plants</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3219-9-1"
+       transform="translate(-62.692751,234.38123)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.00566"
+         id="rect1630-9-2"
+         width="58.768627"
+         height="9.684783"
+         x="70.262154"
+         y="21.838236" />
+      <g
+         id="g28922-5-1-6"
+         transform="matrix(1.099603,0,0,1.099603,-68.550866,-101.26672)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.07549,111.26823)"
+           id="text8157-0-27-6-4"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-0-0-6);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46414"><tspan
+               style="font-style:italic"
+               id="tspan46412">Naturalized plants</tspan></tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 65.515033,260.92639 H 9.1828669"
+       id="path49780-9-2-5-4-1-5-9"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g3226-1-6"
+       transform="translate(-69.276742,125.30833)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.874476"
+         id="rect1630-2-4-3-6"
+         width="44.436066"
+         height="9.684783"
+         x="76.433823"
+         y="5.222187" />
+      <g
+         id="g28922-2-1-8"
+         transform="matrix(1.099603,0,0,1.099603,-62.148815,-117.86478)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.59912,111.25187)"
+           id="text8157-0-1-3-5"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-17-1-6);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46418"><tspan
+               style="font-style:italic"
+               id="tspan46416">Native plants</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3247-5-7"
+       transform="translate(-90.396659,109.48488)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.760898"
+         id="rect1630-2-2-5-7"
+         width="33.642838"
+         height="9.684783"
+         x="228.54189"
+         y="7.5009584" />
+      <g
+         id="g28922-9-0-1-5-4"
+         transform="matrix(1.099603,0,0,1.099603,90.700102,-114.99248)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.11928,111.25187)"
+           id="text8157-0-6-9-1-7-1"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;shape-inside:url(#rect8159-8-7-60-8-9-6)"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46422"><tspan
+               style="font-style:italic"
+               id="tspan46420">Endemics</tspan></tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,56.972827,226.92113)"
+       id="text8157-2-77-1-3-7"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-5-8-5-67-6);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-70.335938"
+         y="33.501211"
+         id="tspan46426">floristic_group =<tspan
+   style="fill:#2a7500"
+   id="tspan46424"> &quot;native&quot;
+</tspan></tspan><tspan
+         x="-70.335938"
+         y="73.501211"
+         id="tspan46432">complete_floristic =<tspan
+   style="fill:#2a7500"
+   id="tspan46428"> </tspan><tspan
+   style="fill:#0000ff"
+   id="tspan46430">TRUE</tspan></tspan></text>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,56.972827,86.627177)"
+       id="text8157-2-77-1-3-7-3"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-5-8-5-67-6-2);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-70.335938"
+         y="33.501211"
+         id="tspan46436">floristic_group =<tspan
+   style="fill:#2a7500"
+   id="tspan46434"> &quot;all&quot; </tspan></tspan><tspan
+         x="-70.335938"
+         y="73.501211"
+         id="tspan46442">complete_floristic =<tspan
+   style="fill:#2a7500"
+   id="tspan46438"> </tspan><tspan
+   style="fill:#0000ff"
+   id="tspan46440">FALSE</tspan></tspan></text>
+    <g
+       id="g3233-4-2"
+       transform="translate(-80.313187,116.04063)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.76783"
+         id="rect1630-2-8-1"
+         width="34.25861"
+         height="9.684783"
+         x="159.89388"
+         y="8.8302441" />
+      <g
+         id="g28922-9-0-8-1"
+         transform="matrix(1.099603,0,0,1.099603,28.167248,-111.916)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,144.55804,109.66294)"
+           id="text8157-0-6-9-10-1"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-7-60-6-9);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46446"><tspan
+               style="font-style:italic"
+               id="tspan46444">Endemics</tspan></tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:#c8c8c8;fill-opacity:1;stroke:none;stroke-width:0.529432;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="m 129.18636,209.41928 3.40944,-24.12576 31.78013,-2.44057 15.84073,5.074 9.43755,8.35185 15.18691,9.40166 1.59533,8.86605 -19.29174,5.55236 -46.73062,0.41005 z"
+       id="path1017-6-5-3-0-71-4-8"
+       sodipodi:nodetypes="cccccccccc" />
+    <g
+       id="g3219-9-6"
+       transform="translate(-62.692751,164.76741)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.01368"
+         id="rect1630-9-4"
+         width="59.708572"
+         height="9.684783"
+         x="70.262154"
+         y="21.838236" />
+      <g
+         id="g28922-5-1-9"
+         transform="matrix(1.099603,0,0,1.099603,-68.550866,-101.26672)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.07549,111.26823)"
+           id="text8157-0-27-6-0"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-0-0-2);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46450"><tspan
+               style="font-style:italic"
+               id="tspan46448">Naturalized plants</tspan></tspan></text>
+      </g>
+    </g>
+    <path
+       style="fill:none;stroke:#000000;stroke-width:1;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 66.14314,191.47585 H 9.087918"
+       id="path49780-9-2-5-4-1-5-1"
+       sodipodi:nodetypes="cc" />
+    <g
+       id="g3226-1-6-7"
+       transform="translate(-69.276742,196.90894)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.874476"
+         id="rect1630-2-4-3-6-3"
+         width="44.436066"
+         height="9.684783"
+         x="76.433823"
+         y="5.222187" />
+      <g
+         id="g28922-2-1-8-2"
+         transform="matrix(1.099603,0,0,1.099603,-62.148815,-117.86478)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.59912,111.25187)"
+           id="text8157-0-1-3-5-2"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-17-1-6-1);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46454"><tspan
+               style="font-style:italic"
+               id="tspan46452">Native plants</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3240-2-9-2"
+       transform="translate(-90.966346,178.10442)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.941072"
+         id="rect1630-2-2-6-0-2-3"
+         width="51.46228"
+         height="9.684783"
+         x="229.11157"
+         y="27.060423" />
+      <g
+         id="g28922-1-1-9-6"
+         transform="matrix(1.099603,0,0,1.099603,91.169743,-96.026542)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.77836,111.25187)"
+           id="text8157-0-2-9-5-2"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-6-3-1-5);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46458"><tspan
+               style="font-style:italic;font-weight:bold"
+               id="tspan46456">Native plants</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3247-5-7-2"
+       transform="translate(-90.396659,181.08549)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.76544"
+         id="rect1630-2-2-5-7-4"
+         width="34.045673"
+         height="9.684783"
+         x="228.54189"
+         y="7.5009584" />
+      <g
+         id="g28922-9-0-1-5-4-2"
+         transform="matrix(1.099603,0,0,1.099603,90.700102,-114.99248)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.11928,111.25187)"
+           id="text8157-0-6-9-1-7-1-1"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;fill:#000000;fill-opacity:1;stroke:none;shape-inside:url(#rect8159-8-7-60-8-9-6-8)"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46462"><tspan
+               style="font-style:italic"
+               id="tspan46460">Endemics</tspan></tspan></text>
+      </g>
+    </g>
+    <text
+       xml:space="preserve"
+       transform="matrix(0.26458333,0,0,0.26458333,56.972827,157.16947)"
+       id="text8157-2-77-1-3-7-3-6"
+       style="font-style:normal;font-weight:normal;font-size:32px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-5-8-5-67-6-2-1);fill:#000000;fill-opacity:1;stroke:none"><tspan
+         x="-70.335938"
+         y="33.501211"
+         id="tspan46466">floristic_group =<tspan
+   style="fill:#2a7500"
+   id="tspan46464"> &quot;native&quot;</tspan> </tspan><tspan
+         x="-70.335938"
+         y="73.501211"
+         id="tspan46472">complete_floristic =<tspan
+   style="fill:#2a7500"
+   id="tspan46468"> </tspan><tspan
+   style="fill:#0000ff"
+   id="tspan46470">FALSE</tspan></tspan></text>
+    <g
+       id="g3233-4-2-6"
+       transform="translate(-80.313187,188.0083)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:0.761787"
+         id="rect1630-2-8-1-1"
+         width="33.721497"
+         height="9.684783"
+         x="159.89388"
+         y="8.8302441" />
+      <g
+         id="g28922-9-0-8-1-3"
+         transform="matrix(1.099603,0,0,1.099603,28.167248,-111.916)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,144.55804,109.66294)"
+           id="text8157-0-6-9-10-1-6"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-7-60-6-9-9);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46476"><tspan
+               style="font-style:italic"
+               id="tspan46474">Endemics</tspan></tspan></text>
+      </g>
+    </g>
+    <g
+       id="g3240-8"
+       transform="translate(-90.966346,105.66776)">
+      <rect
+         style="fill:#ffffff;fill-opacity:1;stroke-width:1.0274"
+         id="rect1630-2-2-6-2"
+         width="61.33696"
+         height="9.684783"
+         x="229.11157"
+         y="27.060423" />
+      <g
+         id="g28922-1-9-2"
+         transform="matrix(1.099603,0,0,1.099603,91.169743,-96.026542)">
+        <text
+           xml:space="preserve"
+           transform="matrix(0.32565441,0,0,0.32882567,150.11928,111.25187)"
+           id="text8157-0-2-50-3"
+           style="font-style:normal;font-weight:normal;font-size:17.6472px;line-height:1.25;font-family:sans-serif;white-space:pre;shape-inside:url(#rect8159-8-6-33-9);fill:#000000;fill-opacity:1;stroke:none"><tspan
+             x="-70.335938"
+             y="20.406716"
+             id="tspan46480"><tspan
+               style="font-style:italic;-inkscape-font-specification:'sans-serif Italic'"
+               id="tspan46478">All vascular plants</tspan></tspan></text>
+      </g>
+    </g>
+  </g>
+</svg>
