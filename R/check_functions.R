@@ -16,9 +16,38 @@
 # Returns:
 #   nothing, shows an error message
 
+# Run the API and see if we get 'no query selected'
 check_api <- function(api) {
   if(length(api) != 1 || !is.character(api)){
     stop("api must be a character string indicating which API to use.")
+  }
+  
+  # First check: internet connection
+  if(!curl::has_internet()) {
+    stop("No internet connection found.")
+  }
+  
+  # Second check: web API available
+  req <- httr2::request(api)
+  resp <- httr2::req_error(req, is_error = function(resp) FALSE)
+  
+  # test for non-existing APIs
+  tryCatch(expr = httr2::req_perform(resp),
+           error = function(expr) {
+             stop("Either the API is wrongly specified or the server is down.")
+           })
+  
+  # If the server was found, check for status
+  resp_status <- httr2::resp_status_desc(httr2::req_perform(resp))
+  if(resp_status == "Unauthorized"){
+    stop("A password is needed for this restricted API.")
+  } else if(resp_status != "OK"){
+    stop("Either the API is wrongly specified or the server is down.")
+  } else{
+    resp <- httr2::req_perform(req)
+    if(httr2::resp_body_string(resp) != "No query selected."){
+      stop("Either the API is wrongly specified or the server is down.")
+    }
   }
 }
 
@@ -69,7 +98,7 @@ check_area_threshold_mainland <- function(area_threshold_mainland) {
 # Stop if bias_deriv argument is not having the right format
 #
 # Args:
-#   bias_deriv a boolean
+#   bias_deriv a logical
 #
 # Returns:
 #   shows an error message if needed
@@ -87,7 +116,7 @@ check_bias_deriv <- function(bias_deriv) {
 # Stop if bias_ref argument is not having the right format
 #
 # Args:
-#   bias_ref a boolean
+#   bias_ref a logical
 #
 # Returns:
 #   shows an error message if needed
@@ -105,14 +134,14 @@ check_bias_ref <- function(bias_ref) {
 # Stop if by_ref_ID argument is not having the right format
 #
 # Args:
-#   by_ref_ID a boolean
+#   by_ref_ID a logical
 #
 # Returns:
 #   shows an error message if needed
 
 check_by_ref_ID <- function(by_ref_ID) {
   if(length(by_ref_ID) != 1 || !is.logical(by_ref_ID) || is.na(by_ref_ID)){
-    stop("'by_ref_ID' must be a boolean indicating whether the
+    stop("'by_ref_ID' must be a logical indicating whether the
          removal of overlapping regions shall be applied only at the
          reference level (i.e. within references).")
   }
@@ -186,7 +215,7 @@ check_coordinates <- function(coordinates, shp, overlap) {
 # Stop if complete_floristic argument is not having the right format
 #
 # Args:
-#   complete_floristic a boolean
+#   complete_floristic a logical
 #
 # Returns:
 #   shows an error message if needed
@@ -208,7 +237,7 @@ check_complete_floristic <- function(complete_floristic) {
 # Stop if complete_taxon argument is not having the right format
 #
 # Args:
-#   complete_taxon a boolean
+#   complete_taxon a logical
 #
 # Returns:
 #   shows an error message if needed
@@ -278,9 +307,15 @@ check_geo_type <- function(geo_type) {
 #   GIFT_version or shows an error message
 
 check_gift_version <- function(GIFT_version) {
-  gift_version <- jsonlite::read_json(
-    "https://gift.uni-goettingen.de/api/index.php?query=versions",
-    simplifyVector = TRUE)
+  tryCatch({
+    gift_version <- jsonlite::read_json(
+      "https://gift.uni-goettingen.de/api/index.php?query=versions",
+      simplifyVector = TRUE)
+  },
+  error = function(expr) {
+    stop("The API is correctly specified and the server is not down BUT the
+           database is not responsive at the moment.")
+  })
   
   if (length(GIFT_version) != 1 || is.na(GIFT_version) ||
       !is.character(GIFT_version) || 
@@ -350,7 +385,7 @@ version.")
 # Stop if list_set_only argument is not having the right format
 #
 # Args:
-#   list_set_only a boolean
+#   list_set_only a logical
 #
 # Returns:
 #   shows an error message if needed
@@ -371,7 +406,7 @@ check_list_set_only <- function(list_set_only) {
 # Stop if namesmatched argument is not having the right format
 #
 # Args:
-#   namesmatched a boolean
+#   namesmatched a logical
 #
 # Returns:
 #   shows an error message if needed
@@ -460,7 +495,7 @@ check_ref_excluded <- function(ref_excluded) {
 # Stop if remove_overlap argument is not having the right format
 #
 # Args:
-#   remove_overlap a boolean
+#   remove_overlap a logical
 #
 # Returns:
 #   shows an error message if needed
@@ -530,7 +565,7 @@ check_shp <- function(shp, overlap) {
 # Stop if suit_geo argument is not having the right format
 #
 # Args:
-#   suit_geo a boolean
+#   suit_geo a logical
 #
 # Returns:
 #   shows an error message if needed
@@ -596,7 +631,7 @@ check_taxon_name <- function(taxon_name) {
 # Stop if taxonomic_group argument is not having the right format
 #
 # Args:
-#   taxonomic_group a boolean
+#   taxonomic_group a logical
 #
 # Returns:
 #   shows an error message if needed

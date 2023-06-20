@@ -214,13 +214,15 @@ ggplot(pilbara) +
 #  taxo <- GIFT_taxonomy()
 
 ## -----------------------------------------------------------------------------
-glonaf <- GIFT_overlap(resource = "glonaf")
+gmba_overlap <- GIFT_overlap(resource = "gmba")
 
-kable(glonaf[1:5, ], "html") %>%
+kable(gmba_overlap[1:5, ], "html") %>%
   kable_styling(full_width = FALSE)
 
-gmba <- GIFT_overlap(resource = "gmba")
+## -----------------------------------------------------------------------------
+gmba_overlap[which(gmba_overlap$entity_ID == 11861 &
+                     gmba_overlap$gmba_ID == 731), ]
 
-kable(gmba[1:5, ], "html") %>%
-  kable_styling(full_width = FALSE)
+## ---- fig.cap = "", out.width = "50%",echo = FALSE----------------------------
+knitr::include_graphics("../man/figures/Aisen_Chile_GMBA_overlap.png")
 
