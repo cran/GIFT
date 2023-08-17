@@ -34,6 +34,9 @@ knitr::include_graphics("../man/figures/GIFT.png")
 #  library("tidyr")
 #  library("patchwork")
 
+## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+#  options(timeout = max(1000, getOption("timeout")))
+
 ## ---- fig.width = 3, fig.height = 3-------------------------------------------
 data("western_mediterranean")
 

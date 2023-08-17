@@ -556,6 +556,23 @@ check_shp <- function(shp, overlap) {
     stop("With shp being a linestring, 'overlap' should be either 
         'shape_intersect' or 'extent_intersect'.")
   }
+  
+  # EPSG should be 4326 (WGS84), if not, reprojection and warning message
+  if(!is.null(shp)){
+    if(is.na(sf::st_crs(shp))){
+      warning("There is no CRS defined for your shapefile.
+          We define it as being WGS 84 (EPSG 4326).")
+      sf::st_crs(shp) <- 4326
+    } else if(sf::st_crs(shp) != sf::st_crs(4326)){
+      warning(paste0(
+        "The CRS of the supplied shapefile is not equal to sf::st_crs(4326) as
+        it should be.\n
+        Your shapefile will be reprojected accordingly."))
+      
+      shp <- sf::st_transform(shp, crs = 4326)
+    }
+  }
+  return(shp)  
 }
 
 # Checking suit_geo argument

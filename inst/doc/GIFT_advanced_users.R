@@ -37,6 +37,22 @@ ref <- ref[which(ref$ref_ID %in% c(22, 10333, 10649)),
 kable(ref, "html") %>%
   kable_styling(full_width = FALSE)
 
+## -----------------------------------------------------------------------------
+# List of all regions
+regions <- GIFT_regions()
+
+# Example
+can <- 1036 # entity ID for Canary islands
+
+# What references
+gift_lists <- GIFT_lists()
+
+can_ref <- gift_lists[which(gift_lists$entity_ID %in% c(can)), "ref_ID"]
+
+# What sources
+kable(ref[which(ref$ref_ID %in% can_ref), ], "html") %>%
+  kable_styling(full_width = TRUE)
+
 ## ---- eval = FALSE, echo = TRUE-----------------------------------------------
 #  listID_1 <- GIFT_checklists_raw(list_ID = c(11926))
 #  listID_1_tax <- GIFT_checklists_raw(list_ID = c(11926), namesmatched = TRUE)
@@ -162,21 +178,21 @@ GIFT_no_overlap(c(10071, 12078), area_threshold_island = 0,
 
 ## ---- echo = TRUE, eval = FALSE-----------------------------------------------
 #  ex <- GIFT_checklists(taxon_name = "Tracheophyta", by_ref_ID = FALSE,
-#                        list_set_only = TRUE)
+#                        list_set_only = TRUE, GIFT_version = "3.0")
 #  ex2 <- GIFT_checklists(taxon_name = "Tracheophyta",
 #                         remove_overlap = TRUE, by_ref_ID = TRUE,
-#                         list_set_only = TRUE)
+#                         list_set_only = TRUE, GIFT_version = "3.0")
 #  ex3 <- GIFT_checklists(taxon_name = "Tracheophyta",
 #                         remove_overlap = TRUE, by_ref_ID = FALSE,
-#                         list_set_only = TRUE)
+#                         list_set_only = TRUE, GIFT_version = "3.0")
 #  
-#  length(unique(ex$lists$ref_ID))
-#  length(unique(ex2$lists$ref_ID))
-#  length(unique(ex3$lists$ref_ID))
+#  length(unique(ex$lists$ref_ID)) # 369 checklists
+#  length(unique(ex2$lists$ref_ID)) # 364 checklists
+#  length(unique(ex3$lists$ref_ID)) # 336 checklists
 
 ## ---- eval = FALSE, echo = TRUE-----------------------------------------------
 #  unique(ex2$lists$ref_ID)[!(unique(ex2$lists$ref_ID) %in%
-#                               unique(ex3$lists$ref_ID))] # 25 references
+#                               unique(ex3$lists$ref_ID))] # 28 references
 
 ## ---- include = FALSE, eval = TRUE--------------------------------------------
 pilbara <- GIFT_shapes(entity_ID = c(10043, 12172, 11398, 11391, 10918))
@@ -209,6 +225,31 @@ ggplot(pilbara) +
 ## ---- eval = FALSE, echo = TRUE-----------------------------------------------
 #  Fagus <- GIFT_species_lookup(genus = "Fagus", epithet = "sylvatica",
 #                               namesmatched = TRUE)
+
+## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+#  sp_list <- c("Anemone nemorosa", "Fagus sylvatica")
+#  
+#  gift_sp <- GIFT_species()
+#  
+#  sapply(sp_list, function(x) grep(x, gift_sp$work_species))
+#  gift_sp[sapply(sp_list, function(x) grep(x, gift_sp$work_species)), ]
+#  
+#  # With fuzzy matching
+#  # library("fuzzyjoin")
+#  # library("dplyr")
+#  sp_list <- data.frame(work_species = c("Anemona nemorosa", "Fagus sylvaticaaa"))
+#  
+#  fuzz <- stringdist_join(sp_list, gift_sp,
+#                          by = "work_species",
+#                          mode = "left",
+#                          ignore_case = FALSE,
+#                          method = "jw",
+#                          max_dist = 99,
+#                          distance_col = "dist")
+#  
+#  fuzz %>%
+#    group_by(work_species.x) %>%
+#    slice_min(order_by = dist, n = 1)
 
 ## ---- eval = FALSE, echo = TRUE-----------------------------------------------
 #  taxo <- GIFT_taxonomy()

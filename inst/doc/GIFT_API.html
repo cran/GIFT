@@ -12,7 +12,7 @@
 
 <meta name="author" content="Pierre Denelle &amp; Patrick Weigelt" />
 
-<meta name="date" content="2023-06-19" />
+<meta name="date" content="2023-08-17" />
 
 <title>Queries in the API</title>
 
@@ -564,7 +564,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">Queries in the API</h1>
 <h4 class="author">Pierre Denelle &amp; Patrick Weigelt</h4>
-<h4 class="date">2023-06-19</h4>
+<h4 class="date">2023-08-17</h4>
 
 
 <div id="TOC">
@@ -878,15 +878,15 @@ All GIFT functions
 </tbody>
 </table>
 <p><br> Some more details:</p>
-<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Query for trait and chunks</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="co"># Default value for end is 10000</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="co"># https://gift.uni-goettingen.de/api/extended/index.php?query=traits&amp;</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="co"># traitid=1.1.1&amp;biasref=1&amp;biasderiv=1&amp;startat=100000&amp;limit=10</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co"># To retrieve the geojson</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">paste0</span>(<span class="st">&quot;https://gift.uni-goettingen.de/geojson/geojson_smaller&quot;</span>, </span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>       <span class="fu">ifelse</span>(GIFT_version <span class="sc">==</span> <span class="st">&quot;beta&quot;</span>, <span class="st">&quot;&quot;</span>, GIFT_version), <span class="st">&quot;/&quot;</span>,</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>       entity_ID[i], <span class="st">&quot;.geojson&quot;</span>)</span></code></pre></div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="co"># Query for trait and chunks</span></span>
+<span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="co"># Default value for end is 10000</span></span>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="co"># https://gift.uni-goettingen.de/api/extended/index.php?query=traits&amp;</span></span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="co"># traitid=1.1.1&amp;biasref=1&amp;biasderiv=1&amp;startat=100000&amp;limit=10</span></span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="co"># To retrieve the geojson</span></span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="fu">paste0</span>(<span class="st">&quot;https://gift.uni-goettingen.de/geojson/geojson_smaller&quot;</span>, </span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a>       <span class="fu">ifelse</span>(GIFT_version <span class="sc">==</span> <span class="st">&quot;beta&quot;</span>, <span class="st">&quot;&quot;</span>, GIFT_version), <span class="st">&quot;/&quot;</span>,</span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a>       entity_ID[i], <span class="st">&quot;.geojson&quot;</span>)</span></code></pre></div>
 </div>
 <div id="dependency-graph-of-r-functions" class="section level1">
 <h1>Dependency graph of R functions</h1>

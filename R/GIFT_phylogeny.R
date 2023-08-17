@@ -1,6 +1,7 @@
 #' Phylogeny of the species in GIFT
 #'
-#' Retrieve a phylogeny of the plant species available in GIFT. 
+#' Retrieve a phylogeny of the plant species available in GIFT. The phylogeny
+#' table is not available for GIFT_version 1.0, 2.0, 2.1 and 2.2. 
 #'
 #' @param clade Character string indicating the taxonomic group
 #' of interest corresponding to the node labels in the phylogeny.
@@ -59,8 +60,9 @@ GIFT_phylogeny <- function(
   check_api(api)
   GIFT_version <- check_gift_version(GIFT_version)
   
-  if(GIFT_version != "beta"){
-    stop("Phylogeny table only available for GIFT_version = 'beta'.")
+  if(GIFT_version %in% c("1.0", "2.0", "2.1", "2.2")){
+    stop("The phylogeny table is not available for GIFT_version 1.0, 2.0,
+         2.1 and 2.2.")
   }
   
   if(length(clade) != 1 || is.na(clade) ||
@@ -100,7 +102,7 @@ GIFT_phylogeny <- function(
   phylogeny <- dplyr::bind_rows(phylogeny)
   
   if (nrow(phylogeny) > 1){
-    phylogeny <- dplyr::mutate_at(phylogeny, c("lft", "rgt","work_ID"),
+    phylogeny <- dplyr::mutate_at(phylogeny, c("lft", "rgt", "work_ID"),
                                   as.numeric)
     
     # Newick format

@@ -56,6 +56,9 @@ GIFT_shapes <- function(entity_ID = NULL,
   suit_geo <- suit_geo_rst <- overlap_checked <- NULL
   overlap_glonaf_checked <- overlap_gmba_checked <- NULL
   overlap_gaptani_checked <- priority <- NULL
+  geo_entity <- point_x <- point_y <- area <- x_min <- NULL
+  x_max <- y_min <- y_max <- entity_class <- entity_type <- NULL
+  polygon_source <- geometry <- NULL
   
   # 2. Function ----
   GIFT_entities <- suppressMessages(
@@ -64,8 +67,8 @@ GIFT_shapes <- function(entity_ID = NULL,
   GIFT_entities <- GIFT_entities[complete.cases(GIFT_entities$area), ]
   
   if(is.null(entity_ID)){
-    message("No ID number of the regions was given. All GIFT regions are
-            downloaded, it may take a while.")
+    message("No entity_ID provided. A shapefile for all GIFT regions will be
+            downloaded. It may take a while.")
     entity_ID <- GIFT_entities$entity_ID
   }else{
     initial_nb_asked <- length(unique(entity_ID))
@@ -116,9 +119,9 @@ GIFT_shapes <- function(entity_ID = NULL,
    # sort by area to plot small regions on top of large regions
   geodata <- geodata[order(geodata$area, decreasing = TRUE), ]
   
-  geodata <- dplyr::select(geodata, -suit_geo, -suit_geo_rst, -overlap_checked,
-                           -overlap_glonaf_checked, -overlap_gmba_checked,
-                           -overlap_gaptani_checked, -priority, -factor)
+  geodata <- dplyr::select(geodata, entity_ID, geo_entity, point_x, point_y,
+                           area, x_min, x_max, y_min, y_max, entity_class,
+                           entity_type, polygon_source, geometry)
   
   return(geodata)
 }
