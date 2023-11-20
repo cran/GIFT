@@ -24,7 +24,7 @@ versions <- GIFT_versions()
 kable(versions, "html") %>%
   kable_styling(full_width = FALSE)
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  list_latest <- GIFT_lists(GIFT_version = "latest") # default value
 #  list_1 <- GIFT_lists(GIFT_version = "1.0")
 
@@ -53,7 +53,7 @@ can_ref <- gift_lists[which(gift_lists$entity_ID %in% c(can)), "ref_ID"]
 kable(ref[which(ref$ref_ID %in% can_ref), ], "html") %>%
   kable_styling(full_width = TRUE)
 
-## ---- eval = FALSE, echo = TRUE-----------------------------------------------
+## ----eval = FALSE, echo = TRUE------------------------------------------------
 #  listID_1 <- GIFT_checklists_raw(list_ID = c(11926))
 #  listID_1_tax <- GIFT_checklists_raw(list_ID = c(11926), namesmatched = TRUE)
 #  
@@ -64,10 +64,10 @@ kable(ref[which(ref$ref_ID %in% can_ref), ], "html") %>%
 ## -----------------------------------------------------------------------------
 data("western_mediterranean")
 
-## ---- fig.cap = "Figure 1. GIFT spatial", out.width = "50%", echo = FALSE-----
+## ----fig.cap = "Figure 1. GIFT spatial", out.width = "50%", echo = FALSE------
 knitr::include_graphics("../man/figures/GIFT_spatial.svg")
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  med_centroid_inside  <- GIFT_spatial(shp = western_mediterranean,
 #                                       overlap = "centroid_inside")
 #  med_extent_intersect <- GIFT_spatial(shp = western_mediterranean,
@@ -77,17 +77,17 @@ knitr::include_graphics("../man/figures/GIFT_spatial.svg")
 #  med_shape_inside <- GIFT_spatial(shp = western_mediterranean,
 #                                   overlap = "shape_inside")
 
-## ---- echo = FALSE, eval = FALSE----------------------------------------------
+## ----echo = FALSE, eval = FALSE-----------------------------------------------
 #  med_shape_inside <- GIFT_spatial(shp = western_mediterranean,
 #                                   overlap = "shape_inside")
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  length(unique(med_extent_intersect$entity_ID))
 #  length(unique(med_shape_intersect$entity_ID))
 #  length(unique(med_centroid_inside$entity_ID))
 #  length(unique(med_shape_inside$entity_ID))
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  geodata_extent_intersect <- GIFT_shapes(med_extent_intersect$entity_ID)
 #  
 #  geodata_shape_inside <-
@@ -100,7 +100,7 @@ knitr::include_graphics("../man/figures/GIFT_spatial.svg")
 #    geodata_extent_intersect[which(geodata_extent_intersect$entity_ID %in%
 #                                     med_shape_intersect$entity_ID), ]
 
-## ---- echo = TRUE, eval=FALSE, fig.width = 8, fig.height = 4------------------
+## ----echo = TRUE, eval=FALSE, fig.width = 8, fig.height = 4-------------------
 #  par_overlap <- par(mfrow = c(2, 2), mai = c(0, 0, 0.5, 0))
 #  plot(sf::st_geometry(geodata_shape_inside),
 #       col = geodata_shape_inside$entity_ID,
@@ -132,10 +132,10 @@ knitr::include_graphics("../man/figures/GIFT_spatial.svg")
 #  plot(sf::st_geometry(western_mediterranean), lwd = 2, add = TRUE)
 #  par(par_overlap)
 
-## ---- fig.cap = "", out.width = "100%",echo = FALSE---------------------------
+## ----fig.cap = "", out.width = "100%",echo = FALSE----------------------------
 knitr::include_graphics("../man/figures/advanced_overlap.png")
 
-## ---- echo = FALSE, eval = TRUE-----------------------------------------------
+## ----echo = FALSE, eval = TRUE------------------------------------------------
 med_shape_inside <- data.frame(
   entity_ID = c(145, 146, 147, 148, 149, 150, 151, 414, 415, 416, 417, 547, 548,
                 549, 550, 551, 552, 586, 591, 592, 736, 738, 739, 1033, 1036,
@@ -146,7 +146,7 @@ med_shape_inside <- data.frame(
                 12071, 12078, 12230, 12231, 12232, 12233, 12551, 12632, 12633,
                 12634, 12635))
 
-## ---- message=FALSE, fig.width = 10, fig.height = 6---------------------------
+## ----message=FALSE, fig.width = 10, fig.height = 6----------------------------
 length(med_shape_inside$entity_ID)
 length(GIFT_no_overlap(med_shape_inside$entity_ID, area_threshold_island = 0,
                        area_threshold_mainland = 100, overlap_threshold = 0.1))
@@ -155,14 +155,14 @@ length(GIFT_no_overlap(med_shape_inside$entity_ID, area_threshold_island = 0,
 GIFT_no_overlap(med_shape_inside$entity_ID, area_threshold_island = 0,
                 area_threshold_mainland = 100, overlap_threshold = 0.1)
 
-## ---- eval=FALSE, echo = TRUE-------------------------------------------------
+## ----eval=FALSE, echo = TRUE--------------------------------------------------
 #  # Example of two overlapping polygons: Spain mainland and Andalusia
 #  overlap_shape <- GIFT_shapes(entity_ID = c(10071, 12078))
 
-## ---- include=FALSE, eval = TRUE----------------------------------------------
+## ----include=FALSE, eval = TRUE-----------------------------------------------
 overlap_shape <- GIFT_shapes(entity_ID = c(10071, 12078))
 
-## ---- message=FALSE, fig.width = 10, fig.height = 6---------------------------
+## ----message=FALSE, fig.width = 10, fig.height = 6----------------------------
 par_overlap_shp <- par(mfrow = c(1, 1))
 plot(sf::st_geometry(overlap_shape),
      col = c(rgb(red = 1, green = 0, blue = 0, alpha = 0.5),
@@ -176,7 +176,7 @@ GIFT_no_overlap(c(10071, 12078), area_threshold_island = 0,
 GIFT_no_overlap(c(10071, 12078), area_threshold_island = 0,
                 area_threshold_mainland = 100000, overlap_threshold = 0.1)
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  ex <- GIFT_checklists(taxon_name = "Tracheophyta", by_ref_ID = FALSE,
 #                        list_set_only = TRUE, GIFT_version = "3.0")
 #  ex2 <- GIFT_checklists(taxon_name = "Tracheophyta",
@@ -190,14 +190,14 @@ GIFT_no_overlap(c(10071, 12078), area_threshold_island = 0,
 #  length(unique(ex2$lists$ref_ID)) # 364 checklists
 #  length(unique(ex3$lists$ref_ID)) # 336 checklists
 
-## ---- eval = FALSE, echo = TRUE-----------------------------------------------
+## ----eval = FALSE, echo = TRUE------------------------------------------------
 #  unique(ex2$lists$ref_ID)[!(unique(ex2$lists$ref_ID) %in%
 #                               unique(ex3$lists$ref_ID))] # 28 references
 
-## ---- include = FALSE, eval = TRUE--------------------------------------------
+## ----include = FALSE, eval = TRUE---------------------------------------------
 pilbara <- GIFT_shapes(entity_ID = c(10043, 12172, 11398, 11391, 10918))
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  # Pilbara region Australy and overlapping shapes
 #  pilbara <- GIFT_shapes(entity_ID = c(10043, 12172, 11398, 11391, 10918))
 
@@ -206,27 +206,27 @@ ggplot(pilbara) +
   geom_sf(aes(fill = as.factor(entity_ID)), alpha = 0.5) +
   scale_fill_brewer("entity_ID", palette = "Set1")
 
-## ---- eval = FALSE, echo = TRUE-----------------------------------------------
+## ----eval = FALSE, echo = TRUE------------------------------------------------
 #  species <- GIFT_species()
 
-## ---- eval = FALSE, echo = TRUE-----------------------------------------------
+## ----eval = FALSE, echo = TRUE------------------------------------------------
 #  # Add Family
 #  species$Family <- GIFT_taxgroup(
 #    as.numeric(species$work_ID), taxon_lvl = "family", return_ID = FALSE,
 #    species = species)
 
-## ---- eval = FALSE, echo = TRUE-----------------------------------------------
+## ----eval = FALSE, echo = TRUE------------------------------------------------
 #  GIFT_taxgroup(as.numeric(species$work_ID[1:5]), taxon_lvl = "order",
 #                return_ID = FALSE)
 #  GIFT_taxgroup(as.numeric(species$work_ID[1:5]),
 #                taxon_lvl = "higher_lvl", return_ID = FALSE,
 #                species = species)
 
-## ---- eval = FALSE, echo = TRUE-----------------------------------------------
+## ----eval = FALSE, echo = TRUE------------------------------------------------
 #  Fagus <- GIFT_species_lookup(genus = "Fagus", epithet = "sylvatica",
 #                               namesmatched = TRUE)
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  sp_list <- c("Anemone nemorosa", "Fagus sylvatica")
 #  
 #  gift_sp <- GIFT_species()
@@ -251,7 +251,7 @@ ggplot(pilbara) +
 #    group_by(work_species.x) %>%
 #    slice_min(order_by = dist, n = 1)
 
-## ---- eval = FALSE, echo = TRUE-----------------------------------------------
+## ----eval = FALSE, echo = TRUE------------------------------------------------
 #  taxo <- GIFT_taxonomy()
 
 ## -----------------------------------------------------------------------------
@@ -264,6 +264,6 @@ kable(gmba_overlap[1:5, ], "html") %>%
 gmba_overlap[which(gmba_overlap$entity_ID == 11861 &
                      gmba_overlap$gmba_ID == 731), ]
 
-## ---- fig.cap = "", out.width = "50%",echo = FALSE----------------------------
+## ----fig.cap = "", out.width = "50%",echo = FALSE-----------------------------
 knitr::include_graphics("../man/figures/Aisen_Chile_GMBA_overlap.png")
 

@@ -17,7 +17,7 @@ options(tinytex.verbose = TRUE)
 knitr::include_graphics("../man/figures/biodiv_gottingen_logo.png")
 knitr::include_graphics("../man/figures/GIFT.png")
 
-## ---- eval = FALSE, echo = FALSE----------------------------------------------
+## ----eval = FALSE, echo = FALSE-----------------------------------------------
 #  # GIFT_traits_raw => reference_traits traits_raw
 #  # GIFT_traits_meta => traits_meta
 #  # GIFT_traits => traits
@@ -40,7 +40,7 @@ knitr::include_graphics("../man/figures/GIFT.png")
 #  # GIFT_checklists => lists, taxonomy, overlap
 #  # GIFT_phylogeny => phylogeny
 
-## ---- echo = FALSE------------------------------------------------------------
+## ----echo = FALSE-------------------------------------------------------------
 query_table <-
   data.frame(
     Query = c("checklists", "env_misc", "env_raster", "geoentities_env_misc",
@@ -81,7 +81,7 @@ query_table <-
 kable(query_table, "html") %>%
   kable_styling(full_width = FALSE)
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  # Query for trait and chunks
 #  # Default value for end is 10000
 #  # https://gift.uni-goettingen.de/api/extended/index.php?query=traits&
@@ -92,6 +92,6 @@ kable(query_table, "html") %>%
 #         ifelse(GIFT_version == "beta", "", GIFT_version), "/",
 #         entity_ID[i], ".geojson")
 
-## ---- fig.cap = "", out.width = "100%",echo = FALSE---------------------------
+## ----fig.cap = "", out.width = "100%",echo = FALSE----------------------------
 knitr::include_graphics("../man/figures/GIFT_network_functions.png")
 

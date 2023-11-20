@@ -24,7 +24,7 @@ options(tinytex.verbose = TRUE)
 knitr::include_graphics("../man/figures/biodiv_gottingen_logo.png")
 knitr::include_graphics("../man/figures/GIFT.png")
 
-## ---- echo=TRUE, eval=FALSE---------------------------------------------------
+## ----echo=TRUE, eval=FALSE----------------------------------------------------
 #  library("GIFT")
 #  library("dplyr")
 #  library("ggplot2")
@@ -34,10 +34,10 @@ knitr::include_graphics("../man/figures/GIFT.png")
 #  library("tidyr")
 #  library("patchwork")
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  options(timeout = max(1000, getOption("timeout")))
 
-## ---- fig.width = 3, fig.height = 3-------------------------------------------
+## ----fig.width = 3, fig.height = 3--------------------------------------------
 data("western_mediterranean")
 
 world <- ne_coastline(scale = "medium", returnclass = "sf")
@@ -58,28 +58,28 @@ ggplot(world) +
   lims(x = c(-20, 20), y = c(24, 48)) +
   theme_void()
 
-## ---- fig.cap = "Figure 1. Principle of the complete_taxon argument", out.width = "50%",echo = FALSE----
+## ----fig.cap = "Figure 1. Principle of the complete_taxon argument", out.width = "50%",echo = FALSE----
 knitr::include_graphics("../man/figures/GIFT_complete_taxon.svg")
 
-## ---- fig.cap = "Figure 2. Principle of the complete_floristic argument", out.width = "50%", echo = FALSE----
+## ----fig.cap = "Figure 2. Principle of the complete_floristic argument", out.width = "50%", echo = FALSE----
 knitr::include_graphics("../man/figures/GIFT_complete_floristic.svg")
 
-## ---- fig.cap = "Figure 3. Principle of GIFT_spatial()", out.width = "50%", echo = FALSE----
+## ----fig.cap = "Figure 3. Principle of GIFT_spatial()", out.width = "50%", echo = FALSE----
 knitr::include_graphics("../man/figures/GIFT_spatial.svg")
 
-## ---- fig.cap = "Figure 4. Removing overlapping polygons with remove_overlap argument", out.width = "50%", echo = FALSE----
+## ----fig.cap = "Figure 4. Removing overlapping polygons with remove_overlap argument", out.width = "50%", echo = FALSE----
 knitr::include_graphics("../man/figures/GIFT_no_overlap.svg")
 
-## ---- fig.cap = "Figure 5. Principle of the overlap_th argument", out.width = "50%", echo = FALSE----
+## ----fig.cap = "Figure 5. Principle of the overlap_th argument", out.width = "50%", echo = FALSE----
 knitr::include_graphics("../man/figures/GIFT_overlap_th.svg")
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  ex_meta <- GIFT_checklists(taxon_name = "Angiospermae",
 #                             shp = western_mediterranean,
 #                             overlap = "centroid_inside",
 #                             list_set_only = TRUE)
 
-## ---- eval = FALSE, echo = TRUE-----------------------------------------------
+## ----eval = FALSE, echo = TRUE------------------------------------------------
 #  medit <- GIFT_checklists(taxon_name = "Angiospermae",
 #                           complete_taxon = TRUE,
 #                           floristic_group = "native",
@@ -91,7 +91,7 @@ knitr::include_graphics("../man/figures/GIFT_overlap_th.svg")
 #                           taxonomic_group = TRUE) # this argument adds two
 #  # columns to the checklist: plant family and taxonomic group of each species
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  # Number of references covered
 #  length(unique(medit[[2]]$ref_ID))
 #  #   22 references
@@ -104,7 +104,7 @@ knitr::include_graphics("../man/figures/GIFT_overlap_th.svg")
 #  length(unique(medit[[2]]$work_species))
 #  #   12840 plant species
 
-## ---- eval = FALSE, echo = TRUE-----------------------------------------------
+## ----eval = FALSE, echo = TRUE------------------------------------------------
 #  medit_no_overlap <- GIFT_checklists(shp = western_mediterranean,
 #                                      overlap = "centroid_inside",
 #                                      taxon_name = "Angiospermae",
@@ -114,7 +114,7 @@ knitr::include_graphics("../man/figures/GIFT_overlap_th.svg")
 #  length(unique(medit[[2]]$ref_ID)) # 23 references
 #  length(unique(medit_no_overlap[[2]]$ref_ID)) # 22 references
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  custom_point <- cbind(9.9, 51) # coordinates of Göttingen
 #  
 #  got <- GIFT_checklists(coordinates = custom_point,
@@ -123,10 +123,10 @@ knitr::include_graphics("../man/figures/GIFT_overlap_th.svg")
 #                         remove_overlap = TRUE,
 #                         list_set_only = TRUE)
 
-## ---- eval=FALSE, echo = TRUE-------------------------------------------------
+## ----eval=FALSE, echo = TRUE--------------------------------------------------
 #  gift_shapes <- GIFT_shapes() # retrieves all shapefiles by default
 
-## ---- echo = TRUE, eval = FALSE, message=FALSE, fig.width = 8, fig.height = 4----
+## ----echo = TRUE, eval = FALSE, message=FALSE, fig.width = 8, fig.height = 4----
 #  angio_rich <- GIFT_richness(taxon_name = "Angiospermae")
 #  
 #  rich_map <- dplyr::left_join(gift_shapes, angio_rich, by = "entity_ID") %>%
@@ -141,13 +141,13 @@ knitr::include_graphics("../man/figures/GIFT_overlap_th.svg")
 #    coord_sf(crs = eckertIV) +
 #    theme_void()
 
-## ---- fig.cap = "", out.width = "90%",echo = FALSE----------------------------
+## ----fig.cap = "", out.width = "90%",echo = FALSE-----------------------------
 knitr::include_graphics("../man/figures/angio_rich_map.png")
 
-## ---- fig.cap = "", out.width = "90%",echo = FALSE----------------------------
+## ----fig.cap = "", out.width = "90%",echo = FALSE-----------------------------
 knitr::include_graphics("../man/figures/angio_rich_map2.png")
 
-## ---- echo = TRUE, eval=FALSE-------------------------------------------------
+## ----echo = TRUE, eval=FALSE--------------------------------------------------
 #  # Background box
 #  xmin <- st_bbox(world)[["xmin"]]; xmax <- st_bbox(world)[["xmax"]]
 #  ymin <- st_bbox(world)[["ymin"]]; ymax <- st_bbox(world)[["ymax"]]
@@ -202,7 +202,7 @@ knitr::include_graphics("../man/figures/angio_rich_map2.png")
 #    coord_sf(crs = eckertIV) +
 #    theme_void()
 
-## ---- echo = TRUE, eval = FALSE, message=FALSE, fig.width = 8, fig.height = 4----
+## ----echo = TRUE, eval = FALSE, message=FALSE, fig.width = 8, fig.height = 4----
 #  med_shape <- gift_shapes[which(gift_shapes$entity_ID %in%
 #                                   unique(medit[[2]]$entity_ID)), ]
 #  
@@ -222,10 +222,10 @@ knitr::include_graphics("../man/figures/angio_rich_map2.png")
 #    lims(x = c(-20, 20), y = c(24, 48)) +
 #    theme_void()
 
-## ---- fig.cap = "", out.width = "90%",echo = FALSE----------------------------
+## ----fig.cap = "", out.width = "90%",echo = FALSE-----------------------------
 knitr::include_graphics("../man/figures/angio_medit.png")
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  all_sp <- GIFT_species()
 
 ## ----anemone_lookup-----------------------------------------------------------
@@ -252,7 +252,7 @@ table(anemone_statuses$endemic_list)
 table(paste(anemone_statuses$native, anemone_statuses$naturalized,
             sep = "_"))
 
-## ---- echo = TRUE, eval = FALSE, fig.width = 8, fig.height = 4----------------
+## ----echo = TRUE, eval = FALSE, fig.width = 8, fig.height = 4-----------------
 #  # We rename the statuses based on the distinct combinations
 #  anemone_statuses <- anemone_statuses %>%
 #    mutate(Status = case_when(
@@ -281,13 +281,13 @@ table(paste(anemone_statuses$native, anemone_statuses$naturalized,
 #    lims(x = c(-65, 170), y = c(-45, 70)) +
 #    theme_void()
 
-## ---- fig.cap = "", out.width = "90%",echo = FALSE----------------------------
+## ----fig.cap = "", out.width = "90%",echo = FALSE-----------------------------
 knitr::include_graphics("../man/figures/anemone_map.png")
 
-## ---- fig.cap = "", out.width = "90%",echo = FALSE----------------------------
+## ----fig.cap = "", out.width = "90%",echo = FALSE-----------------------------
 knitr::include_graphics("../man/figures/anemone_map2.png")
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  anemone_map_plot_bg_parts <-
 #    ggplot(world) +
 #    geom_sf(data = bb, fill = "aliceblue", color = NA) +
@@ -324,7 +324,7 @@ knitr::include_graphics("../man/figures/anemone_map2.png")
 trait_meta <- GIFT_traits_meta()
 trait_meta[which(trait_meta$Trait2 == "Plant_height_max"), ]
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  height <- GIFT_traits(trait_IDs = c("1.6.2"), agreement = 0.66,
 #                        bias_ref = FALSE, bias_deriv = FALSE)
 #  
@@ -338,7 +338,7 @@ trait_meta[which(trait_meta$Trait2 == "Plant_height_max"), ]
 #  as.numeric(height[which(height$work_species == "Fagus sylvatica"),
 #                    "trait_value_1.6.2"])
 
-## ---- echo = TRUE, eval=FALSE-------------------------------------------------
+## ----echo = TRUE, eval=FALSE--------------------------------------------------
 #  references <- GIFT_references(GIFT_version = "beta")
 #  
 #  unique(unlist(strsplit(height$references_1.6.2, ",")))
@@ -348,13 +348,13 @@ trait_meta[which(trait_meta$Trait2 == "Plant_height_max"), ]
 #            unique(unlist(strsplit(height$references_1.6.2, ",")))), ]
 #  references[1:2, ]
 
-## ---- echo=TRUE, eval=FALSE---------------------------------------------------
+## ----echo=TRUE, eval=FALSE----------------------------------------------------
 #  trait_tax <- GIFT_traits_tax(trait_IDs = c("1.1.1", "1.2.1", "1.4.1"),
 #                               bias_ref = FALSE, bias_deriv = FALSE)
 #  
 #  trait_tax[1:3, ]
 
-## ---- echo = TRUE, eval = FALSE, fig.width = 8, fig.height = 4----------------
+## ----echo = TRUE, eval = FALSE, fig.width = 8, fig.height = 4-----------------
 #  angio_height <- GIFT_coverage(what = "trait_coverage",
 #                                taxon_name = "Angiospermae",
 #                                trait_ID = "1.6.2")
@@ -377,13 +377,13 @@ trait_meta[which(trait_meta$Trait2 == "Plant_height_max"), ]
 #    coord_sf(crs = eckertIV) +
 #    theme_void()
 
-## ---- fig.cap = "", out.width = "90%",echo = FALSE----------------------------
+## ----fig.cap = "", out.width = "90%",echo = FALSE-----------------------------
 knitr::include_graphics("../man/figures/angio_height_plot.png")
 
-## ---- fig.cap = "", out.width = "90%",echo = FALSE----------------------------
+## ----fig.cap = "", out.width = "90%",echo = FALSE-----------------------------
 knitr::include_graphics("../man/figures/angio_height_plot2.png")
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  ggplot(world) +
 #    geom_sf(data = bb, fill = "aliceblue") +
 #    geom_sf(data = equator, color = "gray50", linetype = "dashed",
@@ -421,7 +421,7 @@ knitr::include_graphics("../man/figures/angio_height_plot2.png")
 misc_env <- GIFT_env_meta_misc()
 raster_env <- GIFT_env_meta_raster()
 
-## ---- echo = TRUE, eval = FALSE-----------------------------------------------
+## ----echo = TRUE, eval = FALSE------------------------------------------------
 #  med_env <- GIFT_env(entity_ID = unique(medit[[2]]$entity_ID),
 #                      miscellaneous = c("perimeter", "biome"),
 #                      rasterlayer = c("mn30_grd", "wc2.0_bio_30s_01"),
@@ -429,7 +429,7 @@ raster_env <- GIFT_env_meta_raster()
 #  
 #  med_env[1, ]
 
-## ---- echo = TRUE, eval = FALSE, fig.width = 8, fig.height = 4----------------
+## ----echo = TRUE, eval = FALSE, fig.width = 8, fig.height = 4-----------------
 #  world_temp <- GIFT_env(entity_ID = unique(angio_rich$entity_ID),
 #                         rasterlayer = c("wc2.0_bio_30s_01"),
 #                         sumstat = c("mean"))
@@ -448,13 +448,13 @@ raster_env <- GIFT_env_meta_raster()
 #    coord_sf(crs = eckertIV) +
 #    theme_void()
 
-## ---- fig.cap = "", out.width = "90%",echo = FALSE----------------------------
+## ----fig.cap = "", out.width = "90%",echo = FALSE-----------------------------
 knitr::include_graphics("../man/figures/temp_plot.png")
 
-## ---- fig.cap = "", out.width = "90%",echo = FALSE----------------------------
+## ----fig.cap = "", out.width = "90%",echo = FALSE-----------------------------
 knitr::include_graphics("../man/figures/temp_plot2.png")
 
-## ---- eval=FALSE--------------------------------------------------------------
+## ----eval=FALSE---------------------------------------------------------------
 #  ggplot(world) +
 #    geom_sf(data = bb, fill = "aliceblue") +
 #    geom_sf(data = equator, color = "gray50", linetype = "dashed",
@@ -488,7 +488,7 @@ knitr::include_graphics("../man/figures/temp_plot2.png")
 #    coord_sf(crs = eckertIV) +
 #    theme_void()
 
-## ---- eval=FALSE, echo=TRUE---------------------------------------------------
+## ----eval=FALSE, echo=TRUE----------------------------------------------------
 #  # Retrieving phylogeny, taxonomy and species from GIFT
 #  phy <- GIFT_phylogeny(clade = "Tracheophyta", GIFT_version = "beta")
 #  tax <- GIFT_taxonomy(GIFT_version = "beta")
@@ -497,11 +497,11 @@ knitr::include_graphics("../man/figures/temp_plot2.png")
 #  gf <- GIFT_traits(trait_IDs = "1.2.1", agreement = 0.66, bias_ref = FALSE,
 #                    bias_deriv = FALSE, GIFT_version = "beta")
 
-## ---- eval=FALSE, echo=TRUE---------------------------------------------------
+## ----eval=FALSE, echo=TRUE----------------------------------------------------
 #  # Replacing space with _ for the species names
 #  gf$work_species <- gsub(" ", "_", gf$work_species, fixed = TRUE)
 
-## ---- eval=FALSE, echo=TRUE---------------------------------------------------
+## ----eval=FALSE, echo=TRUE----------------------------------------------------
 #  # Retrieving family of each species
 #  sp_fam <- GIFT_taxgroup(work_ID = unique(gift_sp$work_ID),
 #                          taxon_lvl = "family", GIFT_version = "beta")
@@ -525,7 +525,7 @@ knitr::include_graphics("../man/figures/temp_plot2.png")
 #              3,
 #              nchar(phy$tip.label[substring(phy$tip.label, 1, 2) == "×_"]))
 
-## ---- eval=FALSE, echo=TRUE---------------------------------------------------
+## ----eval=FALSE, echo=TRUE----------------------------------------------------
 #  sp_genus_fam <- left_join(sp_genus_fam,
 #                            gf[, c("work_ID", "trait_value_1.2.1")],
 #                            by = "work_ID")
@@ -579,12 +579,12 @@ knitr::include_graphics("../man/figures/temp_plot2.png")
 #  colnames(one_sp_per_gen)[colnames(one_sp_per_gen) == "prop_gf"] <-
 #    "prop_gf_fam"
 
-## ---- eval=FALSE, echo=TRUE---------------------------------------------------
+## ----eval=FALSE, echo=TRUE----------------------------------------------------
 #  phy_gen <- ape::keep.tip(
 #    phy = phy,
 #    tip = one_sp_per_gen[complete.cases(one_sp_per_gen$species), "species"])
 
-## ---- echo=TRUE, eval = FALSE-------------------------------------------------
+## ----echo=TRUE, eval = FALSE--------------------------------------------------
 #  library("BiocManager")
 #  install("ggtree")
 #  library("ggtree")
@@ -592,7 +592,7 @@ knitr::include_graphics("../man/figures/temp_plot2.png")
 #  install("ggtreeExtra")
 #  library("ggtreeExtra")
 
-## ---- echo = TRUE, eval = FALSE, fig.width = 6, fig.height = 6----------------
+## ----echo = TRUE, eval = FALSE, fig.width = 6, fig.height = 6-----------------
 #  ggtree(phy_gen, color = "grey70", layout = "circular") %<+% one_sp_per_gen +
 #    geom_fruit(geom = geom_tile,
 #               mapping = aes(fill = prop_gf_gen),
@@ -607,6 +607,6 @@ knitr::include_graphics("../man/figures/temp_plot2.png")
 #    scale_fill_viridis_c("Growth form availability per genus (%)") +
 #    theme(legend.position = "bottom")
 
-## ---- fig.cap = "", out.width = "100%",echo = FALSE---------------------------
+## ----fig.cap = "", out.width = "100%",echo = FALSE----------------------------
 knitr::include_graphics("../man/figures/phy_tree_plot.png")
 
