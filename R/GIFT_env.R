@@ -44,6 +44,11 @@
 #' The other columns relate to the environmental variables the user asked for.
 #'
 #' @references
+#'      Denelle, P., Weigelt, P., & Kreft, H. (2023). GIFT—An R package to
+#'      access the Global Inventory of Floras and Traits. Methods in Ecology
+#'      and Evolution, 14, 2738-2748.
+#'      https://doi.org/10.1111/2041-210X.14213
+#' 
 #'      Weigelt, P, König, C, Kreft, H. GIFT – A Global Inventory of Floras and
 #'      Traits for macroecology and biogeography. J Biogeogr. 2020; 47: 16– 43.
 #'      https://doi.org/10.1111/jbi.13623
@@ -97,7 +102,9 @@ GIFT_env <- function(
          length(miscellaneous)){
         message(paste0(
           "The following miscellaneous variable(s) are not available in GIFT: ",
-          miscellaneous[!(miscellaneous %in% gift_env_meta_misc$variable)]))
+          paste0(miscellaneous[!(miscellaneous %in%
+                                   gift_env_meta_misc$variable)],
+                 collapse = ", ")))
         
         miscellaneous <- miscellaneous[(miscellaneous %in%
                                           gift_env_meta_misc$variable)]
@@ -119,7 +126,9 @@ GIFT_env <- function(
          length(rasterlayer)){
         message(paste0(
           "The following raster layer(s) are not available in GIFT: ",
-          rasterlayer[!(rasterlayer %in% gift_env_meta_raster$layer_name)]))
+          paste0(rasterlayer[!(rasterlayer %in%
+                                 gift_env_meta_raster$layer_name)],
+                 collapse = ", ")))
         
         rasterlayer <- rasterlayer[(rasterlayer %in%
                                       gift_env_meta_raster$layer_name)]

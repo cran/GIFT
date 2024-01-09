@@ -9,7 +9,7 @@
 [![pkgdown](https://github.com/BioGeoMacro/GIFT/actions/workflows/pkgdown.yaml/badge.svg)](https://github.com/BioGeoMacro/GIFT/actions/workflows/pkgdown.yaml)
 ![](https://www.r-pkg.org/badges/version/GIFT)
 ![](https://cranlogs.r-pkg.org/badges/grand-total/GIFT)
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.8256512.svg)](https://doi.org/10.5281/zenodo.8256512)  
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.10161624.svg)](https://doi.org/10.5281/zenodo.10161624)  
 <!-- badges: end -->
 
 This **R package** includes several functions to extract data from the
@@ -83,7 +83,8 @@ to get to it as soon as possible!
 
 Denelle, P., Weigelt, P., & Kreft, H. (2023). GIFT—An R package to
 access the Global Inventory of Floras and Traits. *Methods in Ecology
-and Evolution*, 00, 1–11. <https://doi.org/10.1111/2041-210X.14213>.
+and Evolution*, 14, 2738-2748.
+<https://doi.org/10.1111/2041-210X.14213>.
 
 Weigelt, P., König, C. & Kreft, H. (2020) GIFT – A Global Inventory of
 Floras and Traits for macroecology and biogeography. *Journal of
