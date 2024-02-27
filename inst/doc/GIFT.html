@@ -12,7 +12,7 @@
 
 <meta name="author" content="Pierre Denelle &amp; Patrick Weigelt" />
 
-<meta name="date" content="2024-01-08" />
+<meta name="date" content="2024-02-27" />
 
 <title>GIFT tutorial</title>
 
@@ -564,7 +564,7 @@ code > span.er { color: #a61717; background-color: #e3d2d2; }
 
 <h1 class="title toc-ignore">GIFT tutorial</h1>
 <h4 class="author">Pierre Denelle &amp; Patrick Weigelt</h4>
-<h4 class="date">2024-01-08</h4>
+<h4 class="date">2024-02-27</h4>
 
 
 <div id="TOC">
@@ -642,12 +642,15 @@ it</li>
 <p>The following R packages are required to build this vignette:</p>
 <div class="sourceCode" id="cb1"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb1-1"><a href="#cb1-1" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;GIFT&quot;</span>)</span>
 <span id="cb1-2"><a href="#cb1-2" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;dplyr&quot;</span>)</span>
-<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;ggplot2&quot;</span>)</span>
-<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;sf&quot;</span>)</span>
-<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;rnaturalearth&quot;</span>)</span>
-<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;rnaturalearthdata&quot;</span>)</span>
-<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;tidyr&quot;</span>)</span>
-<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;patchwork&quot;</span>)</span></code></pre></div>
+<span id="cb1-3"><a href="#cb1-3" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;knitr&quot;</span>)</span>
+<span id="cb1-4"><a href="#cb1-4" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;kableExtra&quot;</span>)</span>
+<span id="cb1-5"><a href="#cb1-5" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;ggplot2&quot;</span>)</span>
+<span id="cb1-6"><a href="#cb1-6" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;sf&quot;</span>)</span>
+<span id="cb1-7"><a href="#cb1-7" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;rnaturalearth&quot;</span>)</span>
+<span id="cb1-8"><a href="#cb1-8" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;rnaturalearthdata&quot;</span>)</span>
+<span id="cb1-9"><a href="#cb1-9" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;tidyr&quot;</span>)</span>
+<span id="cb1-10"><a href="#cb1-10" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;ape&quot;</span>)</span>
+<span id="cb1-11"><a href="#cb1-11" tabindex="-1"></a><span class="fu">library</span>(<span class="st">&quot;patchwork&quot;</span>)</span></code></pre></div>
 <p><br><br></p>
 <p><strong>Side-note</strong><br />
 Some of the following queries may take a long time to complete
@@ -1152,30 +1155,33 @@ retrieve its distribution using
 only one floristic status per polygon. See the function’s help page for
 more details. <br></p>
 <div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb15-1"><a href="#cb15-1" tabindex="-1"></a>anemone_distr <span class="ot">&lt;-</span> <span class="fu">GIFT_species_distribution</span>(</span>
-<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>  <span class="at">genus =</span> <span class="st">&quot;Anemone&quot;</span>, <span class="at">epithet =</span> <span class="st">&quot;nemorosa&quot;</span>, <span class="at">aggregation =</span> <span class="cn">TRUE</span>)</span>
-<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a></span>
-<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a>anemone_statuses <span class="ot">&lt;-</span> anemone_distr <span class="sc">%&gt;%</span></span>
-<span id="cb15-5"><a href="#cb15-5" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">native =</span> <span class="fu">ifelse</span>(native <span class="sc">==</span> <span class="dv">1</span>, <span class="st">&quot;native&quot;</span>, <span class="st">&quot;non-native&quot;</span>),</span>
-<span id="cb15-6"><a href="#cb15-6" tabindex="-1"></a>         <span class="at">naturalized =</span> <span class="fu">ifelse</span>(naturalized <span class="sc">==</span> <span class="dv">1</span>, <span class="st">&quot;naturalized&quot;</span>,</span>
-<span id="cb15-7"><a href="#cb15-7" tabindex="-1"></a>                              <span class="st">&quot;non-naturalized&quot;</span>),</span>
-<span id="cb15-8"><a href="#cb15-8" tabindex="-1"></a>         <span class="at">endemic_list =</span> <span class="fu">ifelse</span>(endemic_list <span class="sc">==</span> <span class="dv">1</span>, <span class="st">&quot;endemic_list&quot;</span>,</span>
-<span id="cb15-9"><a href="#cb15-9" tabindex="-1"></a>                               <span class="st">&quot;non-endemic_list&quot;</span>)) <span class="sc">%&gt;%</span></span>
-<span id="cb15-10"><a href="#cb15-10" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(entity_ID, native, naturalized, endemic_list)</span>
-<span id="cb15-11"><a href="#cb15-11" tabindex="-1"></a></span>
-<span id="cb15-12"><a href="#cb15-12" tabindex="-1"></a><span class="fu">table</span>(anemone_statuses<span class="sc">$</span>endemic_list)</span></code></pre></div>
+<span id="cb15-2"><a href="#cb15-2" tabindex="-1"></a>  <span class="at">genus =</span> <span class="st">&quot;Anemone&quot;</span>, <span class="at">epithet =</span> <span class="st">&quot;nemorosa&quot;</span>, <span class="at">aggregation =</span> <span class="cn">TRUE</span>,</span>
+<span id="cb15-3"><a href="#cb15-3" tabindex="-1"></a>  <span class="at">GIFT_version =</span> <span class="st">&quot;2.2&quot;</span>)</span>
+<span id="cb15-4"><a href="#cb15-4" tabindex="-1"></a></span>
+<span id="cb15-5"><a href="#cb15-5" tabindex="-1"></a>anemone_statuses <span class="ot">&lt;-</span> anemone_distr <span class="sc">%&gt;%</span></span>
+<span id="cb15-6"><a href="#cb15-6" tabindex="-1"></a>  <span class="fu">mutate</span>(<span class="at">native =</span> <span class="fu">ifelse</span>(native <span class="sc">==</span> <span class="dv">1</span>, <span class="st">&quot;native&quot;</span>, <span class="st">&quot;non-native&quot;</span>),</span>
+<span id="cb15-7"><a href="#cb15-7" tabindex="-1"></a>         <span class="at">naturalized =</span> <span class="fu">ifelse</span>(naturalized <span class="sc">==</span> <span class="dv">1</span>, <span class="st">&quot;naturalized&quot;</span>,</span>
+<span id="cb15-8"><a href="#cb15-8" tabindex="-1"></a>                              <span class="st">&quot;non-naturalized&quot;</span>),</span>
+<span id="cb15-9"><a href="#cb15-9" tabindex="-1"></a>         <span class="at">endemic_list =</span> <span class="fu">ifelse</span>(endemic_list <span class="sc">==</span> <span class="dv">1</span>, <span class="st">&quot;endemic_list&quot;</span>,</span>
+<span id="cb15-10"><a href="#cb15-10" tabindex="-1"></a>                               <span class="st">&quot;non-endemic_list&quot;</span>)) <span class="sc">%&gt;%</span></span>
+<span id="cb15-11"><a href="#cb15-11" tabindex="-1"></a>  dplyr<span class="sc">::</span><span class="fu">select</span>(entity_ID, native, naturalized, endemic_list)</span>
+<span id="cb15-12"><a href="#cb15-12" tabindex="-1"></a></span>
+<span id="cb15-13"><a href="#cb15-13" tabindex="-1"></a><span class="fu">table</span>(anemone_statuses<span class="sc">$</span>endemic_list)</span></code></pre></div>
 <pre><code>## 
 ## non-endemic_list 
-##                7</code></pre>
+##               53</code></pre>
 <p>This species is not listed as endemic in any of the GIFT polygons.
 Let’s check the places where it is listed as native or naturalized.
 <br></p>
 <div class="sourceCode" id="cb17"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb17-1"><a href="#cb17-1" tabindex="-1"></a><span class="fu">table</span>(<span class="fu">paste</span>(anemone_statuses<span class="sc">$</span>native, anemone_statuses<span class="sc">$</span>naturalized,</span>
 <span id="cb17-2"><a href="#cb17-2" tabindex="-1"></a>            <span class="at">sep =</span> <span class="st">&quot;_&quot;</span>))</span></code></pre></div>
 <pre><code>## 
-##                  NA_NA              native_NA native_non-naturalized 
-##                      7                      6                     16 
-##          non-native_NA non-native_naturalized 
-##                      3                      1</code></pre>
+##                      NA_NA                  native_NA 
+##                         13                         17 
+##     native_non-naturalized              non-native_NA 
+##                        113                          3 
+##     non-native_naturalized non-native_non-naturalized 
+##                          5                          2</code></pre>
 <p>Looking at the different combinations of statuses, we can distinguish
 several situations: in 13 polygons, there is no status available. The
 species is listed as native and non-naturalized (or naturalized status

@@ -15,6 +15,7 @@ suppressPackageStartupMessages({
     library("rnaturalearthdata")
     library("tidyr")
     library("ape")
+    library("patchwork")
   })
 })
 
@@ -27,11 +28,14 @@ knitr::include_graphics("../man/figures/GIFT.png")
 ## ----echo=TRUE, eval=FALSE----------------------------------------------------
 #  library("GIFT")
 #  library("dplyr")
+#  library("knitr")
+#  library("kableExtra")
 #  library("ggplot2")
 #  library("sf")
 #  library("rnaturalearth")
 #  library("rnaturalearthdata")
 #  library("tidyr")
+#  library("ape")
 #  library("patchwork")
 
 ## ----echo = TRUE, eval = FALSE------------------------------------------------
@@ -236,7 +240,8 @@ kable(anemone_lookup, "html") %>%
 
 ## -----------------------------------------------------------------------------
 anemone_distr <- GIFT_species_distribution(
-  genus = "Anemone", epithet = "nemorosa", aggregation = TRUE)
+  genus = "Anemone", epithet = "nemorosa", aggregation = TRUE,
+  GIFT_version = "2.2")
 
 anemone_statuses <- anemone_distr %>%
   mutate(native = ifelse(native == 1, "native", "non-native"),

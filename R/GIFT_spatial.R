@@ -16,7 +16,9 @@
 #' `extent_intersect` means that every polygon from GIFT for which the extent
 #' intersects the provided shape/coordinates will be retrieved.
 #' 
-#' @param entity_ID List of entity_ID to retrieve.
+#' @param entity_ID Constrain the list of regions to be received by a
+#' predefined set of entity_IDs. E.g. this list could come from
+#' GIFT_checklists_conditional().
 #' 
 #' @template GIFT_version_api
 #' 
@@ -39,22 +41,31 @@
 #'
 #' @examples
 #' \donttest{
+#' # With a shapefile
 #' data("western_mediterranean")
 #' ex <- GIFT_spatial(shp = western_mediterranean, overlap = "centroid_inside")
 #' 
+#' # With a shapefile coming from GIFT
+#' spain <- GIFT_shapes(entity_ID = 10071)
+#' ex_spain <- GIFT_spatial(shp = spain)
+#' 
+#' # With a point 
 #' custom_point <- cbind(9.9, 51)
 #' ex2 <- GIFT_spatial(coordinates = custom_point,
 #' overlap = "extent_intersect")
 #' 
+#' # With an extent
 #' custom_extent <- cbind(c(-13, -18), c(27.5, 29.3))
 #' ex3 <- GIFT_spatial(coordinates = custom_extent,
 #' overlap = "extent_intersect")
 #' 
+#' # With a custom polygon
 #' custom_polygon <- cbind(c(-18, -16.9, -13, -13, -18, -18),
 #' c(29.3, 33, 29.3, 27.5, 27.5, 29.3))
 #' ex4 <- GIFT_spatial(coordinates = custom_polygon,
 #' overlap = "extent_intersect")
 #' 
+#' #With a linestring
 #' custom_linestring <- rbind(c(9.9, 51), c(2.35, 48.9))
 #' custom_linestring <- sf::st_as_sf(as.data.frame(custom_linestring),
 #' coords = c("V1", "V2"))
