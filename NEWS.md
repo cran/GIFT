@@ -1,5 +1,17 @@
 # GIFT
 
+# GIFT 1.3.3
+* Vignettes are not built on CRAN anymore, they remain acessible on the website
+
+## Minor changes
+
+* *Anemonoides nemorosa* instead of *Anemone nemorosa* in the vignette
+* Better explanation for the parameter *coordinates* in functions
+GIFT_spatial and GIFT_checklists
+* Publication records section added on the Website/Vignettes
+* Section added for specific region's phylogeny
+* Error message fixed in GIFT_taxgroup()
+
 # GIFT 1.3.2
 ## Minor changes
 
