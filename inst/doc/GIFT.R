@@ -239,6 +239,9 @@ anemone_lookup <- GIFT_species_lookup(genus = "Anemonoides",
 kable(anemone_lookup, "html") %>%
   kable_styling(full_width = FALSE)
 
+## ----fig.cap = "", out.width = "90%",echo = FALSE-----------------------------
+knitr::include_graphics("../man/figures/GIFT_taxonomic_standardization_endemism.svg")
+
 ## -----------------------------------------------------------------------------
 anemone_distr <- GIFT_species_distribution(
   genus = "Anemonoides", epithet = "nemorosa", aggregation = TRUE)

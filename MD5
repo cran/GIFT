@@ -1,13 +1,13 @@
-fdec1fe2b86eb4706f3a963f147026ad *DESCRIPTION
+3a38ebfecd5fc3fd94a119a27fad7b73 *DESCRIPTION
 729d122d2d4c333f243fca6bda30cc11 *NAMESPACE
-7445a3f77aa85f172a93a266063195aa *NEWS.md
+66d21fc0f65cfd853325c31430162483 *NEWS.md
 2c57a84c983515cc75a53f0088762d20 *R/GIFT_checklists.R
 3e084469221739db88f54b53d0b2ff83 *R/GIFT_checklists_conditional.R
 fe6ad55fa563781dcf685145e0af019c *R/GIFT_checklists_raw.R
 b522a4a0d4d59621d9c0be39dbe8955d *R/GIFT_coverage.R
 4fea0753771dc4f0c997c12dd53c69bf *R/GIFT_env.R
-a2f464840a6df704404c7af0c464735f *R/GIFT_env_meta_misc.R
-30a51f5980426ac4bf473a2365dfb154 *R/GIFT_env_meta_raster.R
+d5a2ea9647ac4c995c0d92dc90d45790 *R/GIFT_env_meta_misc.R
+ecb508fb2a39d621d8a9f997739df130 *R/GIFT_env_meta_raster.R
 aa24fd4e3c07223294d80ce819548fed *R/GIFT_lists.R
 3301682c59ed182c588efba783ed8ca6 *R/GIFT_no_overlap.R
 ad2853f0dfcd1bdf04dcbb6b0a33463a *R/GIFT_overlap.R
@@ -21,7 +21,7 @@ a1b4456dd1edc6d7156369321368cd9d *R/GIFT_spatial.R
 08f25cc9b845e392bc6bc95d44a63df6 *R/GIFT_species_distribution.R
 2187b7db11480523a1b7366c15f8b53a *R/GIFT_species_lookup.R
 34c6acaa34d3e5c1953bc5e3d4524373 *R/GIFT_taxgroup.R
-485a4bb35dca0746efcc29b62d990dda *R/GIFT_taxonomy.R
+6b500dd861f678827ac3d7bcb72a5f97 *R/GIFT_taxonomy.R
 78f1347c859ff6219949e45cabf7f458 *R/GIFT_traits.R
 98785e278a952915de6fac02adcf33fb *R/GIFT_traits_meta.R
 3eafc139ba28c47616fa6a087e5dae1c *R/GIFT_traits_raw.R
@@ -33,11 +33,11 @@ d478f4e0b13f11f6059e82ac27aa0243 *R/figures_vignette.R
 629d794dd2bd4c7dc67f5acd3fb332e4 *R/pkg_check.R
 f81eaa1c946a8cb8766652b8c9886f4f *R/western_mediterranean.R
 90cc5384897706341222d99091d27e95 *README.md
-737cd4480865ca9133a6ccf01e7b50ee *build/vignette.rds
+275567076980026bb769a840c0b80c0d *build/vignette.rds
 61fca6d5bfe61d0cdb98a388172528e5 *data/western_mediterranean.rda
-ae6e8b37d9101b3ecf85bc762a708500 *inst/doc/GIFT.R
-e5bd7711b5557b14fecd551c5643388e *inst/doc/GIFT.Rmd
-fb11797aefa80ff8f86bcdb3b6cda13c *inst/doc/GIFT.html
+a068588b97656ad9b3f652eaa2065646 *inst/doc/GIFT.R
+b8fc0736416c8de11167d327dd6ac101 *inst/doc/GIFT.Rmd
+cc2a67872807f25299cb07e131bc8c5e *inst/doc/GIFT.html
 be42bf0e53cf0b10a87fd44fa2b7f6bf *man/GIFT_checklists.Rd
 dcbe04400d4eb025d35ebf5ff16f071c *man/GIFT_checklists_conditional.Rd
 91188371b273d0a5cbe632f32314593a *man/GIFT_checklists_raw.Rd
@@ -58,7 +58,7 @@ e9551ebbf85edc0a96483158a844dac1 *man/GIFT_spatial.Rd
 e9b15687d62b977497694f3505ea5e1a *man/GIFT_species_distribution.Rd
 15226ca28dafe17fd91a5adf50d2c699 *man/GIFT_species_lookup.Rd
 01d1f42aafa6c0530f328fa1f0341054 *man/GIFT_taxgroup.Rd
-5ebfba6c5cda78442cace991a90b9bac *man/GIFT_taxonomy.Rd
+f69fab558dd18a7a779c4a04f371f3ca *man/GIFT_taxonomy.Rd
 ed31b0211c142eeba6d98c78a7ceae49 *man/GIFT_traits.Rd
 d2eeea1082953a35372986787267020e *man/GIFT_traits_meta.Rd
 3edab38747e445ae493b11d1d7cce049 *man/GIFT_traits_raw.Rd
@@ -72,6 +72,7 @@ daab8cf12f0f7e9e006b5e01fd387c7b *man/figures/GIFT_complete_taxon.svg
 77cdeac400735b8b1dbf8bc843117315 *man/figures/GIFT_no_overlap.svg
 7db83616ae451d1b17c43442211b0d32 *man/figures/GIFT_overlap_th.svg
 7c9d1b324d562aeb141e7aa377e70955 *man/figures/GIFT_spatial.svg
+830224a96694e56e430d50db78f9f861 *man/figures/GIFT_taxonomic_standardization_endemism.svg
 a744c7f4c86251fbf21ba6e8c6b39807 *man/figures/advanced_overlap.png
 bc6351468bce068c8dfe9b35936502d8 *man/figures/anemone_map.png
 fd54160079c40f16d501e8a16234c631 *man/figures/anemone_map2.png
@@ -115,4 +116,4 @@ eea57da0e5771d4b67e0b9112b03436c *tests/testthat/test-GIFT_species_distribution.
 6fff45280cfcc80aba5e4cce313aef6b *tests/testthat/test-GIFT_traits_raw.R
 c096c4ac48a58f5f738a75be41bce8d1 *tests/testthat/test-GIFT_traits_tax.R
 28acd92149932c19c840426112697ca7 *tests/testthat/test-GIFT_versions.R
-e5bd7711b5557b14fecd551c5643388e *vignettes/GIFT.Rmd
+b8fc0736416c8de11167d327dd6ac101 *vignettes/GIFT.Rmd

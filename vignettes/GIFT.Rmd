@@ -522,6 +522,18 @@ the right starting with the prefix `work_`.
 
 <br><br>
 
+**Important note**  
+The biogeographic statuses assigned to species and regions are always tied to
+the original sources. Since species names may change due to synonymity after
+taxonomic standardization, the biogeographic statuses may no longer be valid.
+Therefore, users should always double-check these statuses.
+
+The following figure illustrates endemism:  
+
+```{r, fig.cap = "", out.width = "90%",echo = FALSE}
+knitr::include_graphics("../man/figures/GIFT_taxonomic_standardization_endemism.svg")
+```
+
 ## 2.3. Species distribution
 <br>
 Now that we have a focal species and its harmonized name, we can retrieve its
@@ -692,7 +704,7 @@ values can then vary.
 Second, `GIFT_traits()` returns an aggregated trait value at the species level.
 The aggregation simply takes the mean for continuous traits or the most
 frequent entry for categorical traits. However, for some specific cases, the
-aggregation takes either the minimum or the maximum, as for the trait we chose.
+aggregation takes either the minimum (e.g. Plant_height_min, Shoot_length_min, DBH_min, Seed_length_min, ... )or the maximum (Plant_height_max, ...).
 <br>
 Let's retrieve the raw and aggregated values for the maximum vegetative height
 of plants (trait_ID 1.6.2).

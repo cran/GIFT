@@ -1,7 +1,13 @@
 # GIFT
 
+* Typo in the documentation of GIFT_taxonomy()
+* Disclaimer added to the vignettes
+
+# GIFT 1.3.4
+* Fix in GIFT_env_meta_misc and GIFT_env_meta_raster
+
 # GIFT 1.3.3
-* Vignettes are not built on CRAN anymore, they remain acessible on the website
+* Vignettes are not built on CRAN anymore, they remain accessible on the website
 
 ## Minor changes
 
