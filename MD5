@@ -1,6 +1,6 @@
-3a38ebfecd5fc3fd94a119a27fad7b73 *DESCRIPTION
+94303b61e738115a858c7f6e5b8e8836 *DESCRIPTION
 729d122d2d4c333f243fca6bda30cc11 *NAMESPACE
-66d21fc0f65cfd853325c31430162483 *NEWS.md
+9198790e3f342df1a2f0980b4d3f1773 *NEWS.md
 2c57a84c983515cc75a53f0088762d20 *R/GIFT_checklists.R
 3e084469221739db88f54b53d0b2ff83 *R/GIFT_checklists_conditional.R
 fe6ad55fa563781dcf685145e0af019c *R/GIFT_checklists_raw.R
@@ -35,9 +35,9 @@ f81eaa1c946a8cb8766652b8c9886f4f *R/western_mediterranean.R
 90cc5384897706341222d99091d27e95 *README.md
 275567076980026bb769a840c0b80c0d *build/vignette.rds
 61fca6d5bfe61d0cdb98a388172528e5 *data/western_mediterranean.rda
-a068588b97656ad9b3f652eaa2065646 *inst/doc/GIFT.R
-b8fc0736416c8de11167d327dd6ac101 *inst/doc/GIFT.Rmd
-cc2a67872807f25299cb07e131bc8c5e *inst/doc/GIFT.html
+2add17faae3582fc2e1871e7abe02e56 *inst/doc/GIFT.R
+e54cabc38a4020dcec61cdadb2dac3a7 *inst/doc/GIFT.Rmd
+39874538f88c972027fa5aece70cc6ef *inst/doc/GIFT.html
 be42bf0e53cf0b10a87fd44fa2b7f6bf *man/GIFT_checklists.Rd
 dcbe04400d4eb025d35ebf5ff16f071c *man/GIFT_checklists_conditional.Rd
 91188371b273d0a5cbe632f32314593a *man/GIFT_checklists_raw.Rd
@@ -84,6 +84,7 @@ fd54160079c40f16d501e8a16234c631 *man/figures/anemone_map2.png
 0f2aee14bf9d2894dc4bb0bc0bc01b5b *man/figures/biodiv_gottingen_logo.png
 0e7533322ebcc6a7988c64c826f346d3 *man/figures/logo.png
 5e129352bf707444f75ab109ac895960 *man/figures/phy_tree_plot.png
+89eeba5cf15f4fed1288ad03648aab4b *man/figures/plot_world_mediterranean.png
 567dc9df93679609bcc65fcff77c541c *man/figures/rich_map_plot_islands.png
 74dfd48d57e4e385ad7dfad3f5a761c0 *man/figures/temp_plot.png
 23515313686373f05c6f53c3421fd391 *man/figures/temp_plot2.png
@@ -116,4 +117,4 @@ eea57da0e5771d4b67e0b9112b03436c *tests/testthat/test-GIFT_species_distribution.
 6fff45280cfcc80aba5e4cce313aef6b *tests/testthat/test-GIFT_traits_raw.R
 c096c4ac48a58f5f738a75be41bce8d1 *tests/testthat/test-GIFT_traits_tax.R
 28acd92149932c19c840426112697ca7 *tests/testthat/test-GIFT_versions.R
-b8fc0736416c8de11167d327dd6ac101 *vignettes/GIFT.Rmd
+e54cabc38a4020dcec61cdadb2dac3a7 *vignettes/GIFT.Rmd

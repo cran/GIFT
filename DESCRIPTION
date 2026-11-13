@@ -1,7 +1,7 @@
 Package: GIFT
 Type: Package
 Title: Access to the Global Inventory of Floras and Traits (GIFT)
-Version: 1.3.4
+Version: 1.3.5
 Authors@R: c(
   person("Pierre", "Denelle", email = "pierre.denelle@posteo.com",
     role = c("aut", "cre"), comment = c(ORCID = "0000-0001-5037-2281")),
@@ -31,10 +31,10 @@ BugReports: https://github.com/BioGeoMacro/GIFT/issues
 VignetteBuilder: knitr
 Config/roxygen2/version: 8.0.0
 NeedsCompilation: no
-Packaged: 2026-08-23 20:44:45 UTC; Pierre
+Packaged: 2026-11-13 11:14:47 UTC; denelle
 Author: Pierre Denelle [aut, cre] (ORCID:
     <https://orcid.org/0000-0001-5037-2281>),
   Patrick Weigelt [aut] (ORCID: <https://orcid.org/0000-0002-2485-3708>)
 Maintainer: Pierre Denelle <pierre.denelle@posteo.com>
 Repository: CRAN
-Date/Publication: 2026-08-24 11:20:15 UTC
+Date/Publication: 2026-11-13 17:00:26 UTC

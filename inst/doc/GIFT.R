@@ -41,26 +41,29 @@ knitr::include_graphics("../man/figures/GIFT.png")
 ## ----echo = TRUE, eval = FALSE------------------------------------------------
 # options(timeout = max(1000, getOption("timeout")))
 
-## ----fig.width = 3, fig.height = 3--------------------------------------------
-data("western_mediterranean")
+## ----echo = TRUE, eval = FALSE------------------------------------------------
+# data("western_mediterranean")
+# 
+# world <- ne_coastline(scale = "medium", returnclass = "sf")
+# world_countries <- ne_countries(scale = "medium", returnclass = "sf")
+# # Fixing polygons crossing dateline
+# world <- st_wrap_dateline(world)
+# world_countries <- st_wrap_dateline(world_countries)
+# 
+# # Eckert IV projection
+# eckertIV <-
+#   "+proj=eck4 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"
+# 
+# ggplot(world) +
+#   geom_sf(color = "gray50") +
+#   geom_sf(data = western_mediterranean, fill = "darkblue", color = "black",
+#           alpha = 0.5, size = 1) +
+#   labs(title = "Western Mediterranean basin") +
+#   lims(x = c(-20, 20), y = c(24, 48)) +
+#   theme_void()
 
-world <- ne_coastline(scale = "medium", returnclass = "sf")
-world_countries <- ne_countries(scale = "medium", returnclass = "sf")
-# Fixing polygons crossing dateline
-world <- st_wrap_dateline(world)
-world_countries <- st_wrap_dateline(world_countries)
-
-# Eckert IV projection
-eckertIV <-
-  "+proj=eck4 +lon_0=0 +x_0=0 +y_0=0 +ellps=WGS84 +datum=WGS84 +units=m +no_defs"
-
-ggplot(world) +
-  geom_sf(color = "gray50") +
-  geom_sf(data = western_mediterranean, fill = "darkblue", color = "black",
-          alpha = 0.5, size = 1) +
-  labs(title = "Western Mediterranean basin") +
-  lims(x = c(-20, 20), y = c(24, 48)) +
-  theme_void()
+## ----fig.cap = "", out.width = "90%", echo = FALSE, fig.width = 3, fig.height = 3----
+knitr::include_graphics("../man/figures/plot_world_mediterranean.png")
 
 ## ----fig.cap = "Figure 1. Principle of the complete_taxon argument", out.width = "50%",echo = FALSE----
 knitr::include_graphics("../man/figures/GIFT_complete_taxon.svg")
